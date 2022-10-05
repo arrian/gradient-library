@@ -1,0 +1,91 @@
+body {
+    background-color: var(--background-color-2);
+    margin: var(--space-4);
+}
+
+
+section {
+    margin: var(--space-4) 0;
+    padding: var(--space-4);
+    background-color: var(--background-color);
+}
+
+[class*="-grid"] {
+    display: grid;
+}
+
+[class*="-grid"] > * {
+    margin: var(--space-4);
+}
+
+.button-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.link-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.accordion-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.tooltip-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.badge-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.checkbox-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.radio-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.switch-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.tab-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.banner-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.toast-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.chip-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.date-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.select-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.text-field-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.form-field-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.text-area-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
