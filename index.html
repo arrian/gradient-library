@@ -121,6 +121,32 @@
     </section>
 
     <section>
+      <h2>Text Areas</h2>
+      <div class="text-area-grid">
+        <div></div>
+        <div>Default</div>
+        <div>Focused</div>
+        <div>Error</div>
+        <div>Disabled</div>
+        <div>Medium</div>
+        <div><textarea rows="5" placeholder="Placeholder"></textarea></div>
+        <div><textarea data-focused rows="5"></textarea></div>
+        <div><textarea data-invalid rows="5" placeholder="Placeholder"></textarea></div>
+        <div><textarea disabled rows="5"></textarea></div>
+        <div>Small</div>
+        <div><textarea class="small" rows="5" placeholder="Placeholder"></textarea></div>
+        <div><textarea class="small" data-focused rows="5"></textarea></div>
+        <div><textarea class="small" data-invalid rows="5" placeholder="Placeholder"></textarea></div>
+        <div><textarea class="small" disabled rows="5"></textarea></div>
+        <div>Large</div>
+        <div><textarea class="large" rows="5" placeholder="Placeholder"></textarea></div>
+        <div><textarea class="large" data-focused rows="5"></textarea></div>
+        <div><textarea class="large" data-invalid rows="5" placeholder="Placeholder"></textarea></div>
+        <div><textarea class="large" disabled rows="5"></textarea></div>
+      </div>
+    </section>
+
+    <section>
       <h2>Selects</h2>
       <div class="select-grid">
         <div></div>
@@ -134,17 +160,74 @@
         <div><select data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
         <div><select disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
         <div>Small</div>
-        <div><select><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
-        <div><select data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
-        <div><select data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
-        <div><select disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select class="small"><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select class="small" data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select class="small" data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select class="small" disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
         <div>Large</div>
-        <div><select><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
-        <div><select data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
-        <div><select data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
-        <div><select disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select class="large"><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select class="large" data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select class="large" data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select class="large" disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
       </div>
     </section>
+
+    <section>
+      <h2>Checkboxes</h2>
+      <div class="checkbox-grid">
+        <div>Default</div>
+        <div>Selected</div>
+        <div>Focused</div>
+        <div>Focused + selected</div>
+        <div>Disabled</div>
+        <fieldset><label><input type="checkbox"><span>Label</span></label><span class="label-description">Description</span></fieldset>
+        <fieldset><label><input type="checkbox" checked><span>Label</span></label><span class="label-description">Description</span></fieldset>
+        <fieldset><label><input type="checkbox" data-focused><span>Label</span></label><span class="label-description">Description</span></fieldset>
+        <fieldset><label><input type="checkbox" checked data-focused><span>Label</span></label><span class="label-description">Description</span></fieldset>
+        <fieldset><label><input type="checkbox" disabled><span>Label</span></label><span class="label-description">Description</span></fieldset>
+        <div><input type="checkbox"></div>
+        <div><input type="checkbox" checked></div>
+        <div><input type="checkbox" data-focused></div>
+        <div><input type="checkbox" checked data-focused></div>
+        <div><input type="checkbox" disabled></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Radios</h2>
+      <div class="radio-grid">
+        <div>Default</div>
+        <div>Selected</div>
+        <div>Focused</div>
+        <div>Focused + selected</div>
+        <div>Disabled</div>
+        <fieldset><label><input type="radio"><span>Label</span></label><span class="label-description">Description</span></fieldset>
+        <fieldset><label><input type="radio" checked><span>Label</span></label><span class="label-description">Description</span></fieldset>
+        <fieldset><label><input type="radio" data-focused><span>Label</span></label><span class="label-description">Description</span></fieldset>
+        <fieldset><label><input type="radio" checked data-focused><span>Label</span></label><span class="label-description">Description</span></fieldset>
+        <fieldset><label><input type="radio" disabled><span>Label</span></label><span class="label-description">Description</span></fieldset>
+        <div><input type="radio"></div>
+        <div><input type="radio" checked></div>
+        <div><input type="radio" data-focused></div>
+        <div><input type="radio" checked data-focused></div>
+        <div><input type="radio" disabled></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Dates</h2>
+      <div class="date-grid">
+        <div>Default</div>
+        <div>Focused</div>
+        <div>Error</div>
+        <div>Disabled</div>
+        <div><input type="date"></div>
+        <div><input type="date" data-focused></div>
+        <div><input type="date" data-invalid></div>
+        <div><input type="date" disabled></div>
+      </div>
+    </section>
+    
 
     <section>
       <h2>Chips</h2>
@@ -251,43 +334,7 @@
       </div>
     </section>
 
-    <section>
-      <h2>Checkboxes</h2>
-      <div class="checkbox-grid">
-        <div>Default</div>
-        <div>Selected</div>
-        <div>Focused</div>
-        <div>Focused + selected</div>
-        <div>Intermediate</div>
-        <div><input type="checkbox"></div>
-        <div><input type="checkbox"></div>
-        <div><input type="checkbox"></div>
-        <div><input type="checkbox"></div>
-        <div><input type="checkbox"></div>
-        <div><input type="checkbox"></div>
-        <div><input type="checkbox"></div>
-        <div><input type="checkbox"></div>
-        <div><input type="checkbox"></div>
-        <div><input type="checkbox"></div>
-      </div>
-    </section>
-    <section>
-      <h2>Radios</h2>
-      <div class="radio-grid">
-        <div>Default</div>
-        <div>Selected</div>
-        <div>Focused</div>
-        <div>Focused + selected</div>
-        <div><input type="radio"></div>
-        <div><input type="radio"></div>
-        <div><input type="radio"></div>
-        <div><input type="radio"></div>
-        <div><input type="radio"></div>
-        <div><input type="radio"></div>
-        <div><input type="radio"></div>
-        <div><input type="radio"></div>
-      </div>
-    </section>
+
 
     <section>
       <h2>Tabs</h2>
@@ -473,19 +520,7 @@
       </div>
     </section>
 
-    <section>
-      <h2>Dates</h2>
-      <div class="date-grid">
-        <div>Default</div>
-        <div>Focused</div>
-        <div>Error</div>
-        <div>Disabled</div>
-        <div><input type="text"></div>
-        <div><input type="text"></div>
-        <div><input type="text"></div>
-        <div><input type="text"></div>
-      </div>
-    </section>
+
     <section>
       <h2>Form Fields</h2>
       <div class="form-field-grid">
@@ -503,31 +538,7 @@
         <div><input type="text"><input type="text"></div>
       </div>
     </section>
-    <section>
-      <h2>Text Areas</h2>
-      <div class="text-area-grid">
-        <div></div>
-        <div>Default</div>
-        <div>Focused</div>
-        <div>Error</div>
-        <div>Disabled</div>
-        <div>Medium</div>
-        <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
-        <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
-        <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
-        <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
-        <div>Small</div>
-        <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
-        <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
-        <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
-        <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
-        <div>Large</div>
-        <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
-        <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
-        <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
-        <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
-      </div>
-    </section>
+
     <section>
       <h2>Lists</h2>
     </section>
