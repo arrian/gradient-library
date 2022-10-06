@@ -18,6 +18,27 @@ section {
     margin: var(--space-4);
 }
 
+.palette-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.palette-grid > * {
+    border-radius: var(--border-radius-container);
+    width: 100px;
+    height: 100px;
+    font-size: var(--font-size-10);
+    display: flex;
+    text-align: left;
+    align-items: flex-end;
+    color: var(--color-neutral);
+    padding: var(--space-2);
+}
+
+.typography-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
 .button-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
@@ -27,7 +48,7 @@ section {
 }
 
 .accordion-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .tooltip-grid {
@@ -59,7 +80,7 @@ section {
 }
 
 .banner-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .toast-grid {

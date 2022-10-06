@@ -8,6 +8,85 @@
   <body>
     <h1>Gradient Library</h1>
     <section>
+      <h2>Palette</h2>
+      <div class="palette-grid">
+        <div style="background-color: var(--color-neutral-ultra-dark)">Neutral Ultra Dark</div>
+        <div style="background-color: var(--color-neutral-dark)">Neutral Dark</div>
+        <div style="background-color: var(--color-neutral-medium)">Neutral Medium</div>
+        <div style="background-color: var(--color-neutral-light); color: var(--color-neutral-ultra-dark)">Neutral Light</div>
+        <div style="background-color: var(--color-neutral-ultra-light); color: var(--color-neutral-ultra-dark)">Neutral Ultra Light</div>
+        <div style="background-color: var(--color-neutral); color: var(--color-neutral-ultra-dark)">Neutral</div>
+        <div style="background-color: var(--color-accent-dark)">Accent Dark</div>
+        <div style="background-color: var(--color-accent-medium)">Accent Medium</div>
+        <div style="background-color: var(--color-accent-light); color: var(--color-accent-dark)">Accent Light</div>
+        <div style="background-color: var(--color-positive-dark)">Positive Dark</div>
+        <div style="background-color: var(--color-positive-medium)">Positive Medium</div>
+        <div style="background-color: var(--color-positive-light); color: var(--color-positive-dark)">Positive Light</div>
+        <div style="background-color: var(--color-warning-dark)">Warning Dark</div>
+        <div style="background-color: var(--color-warning-medium)">Warning Medium</div>
+        <div style="background-color: var(--color-warning-light); color: var(--color-warning-dark)">Warning Light</div>
+        <div style="background-color: var(--color-negative-dark)">Negative Dark</div>
+        <div style="background-color: var(--color-negative-medium)">Negative Medium</div>
+        <div style="background-color: var(--color-negative-light); color: var(--color-negative-dark)">Negative Light</div>
+        <div style="background-color: var(--color-overlay); color: var(--color-neutral-ultra-dark)">Overlay</div>
+        <div style="background-color: var(--color-shadow); color: var(--color-neutral-ultra-dark)">Shadow</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Typography</h2>
+      <div class="typography-grid">
+        <div>Text</div>
+        <div>Text Bold</div>
+        <div>Text Light</div>
+        <div>Headers</div>
+        <div>Atoms</div>
+        <div>
+          <div style="font-size: var(--font-size-10)">Text 10</div>
+          <div style="font-size: var(--font-size-12)">Text 12</div>
+          <div style="font-size: var(--font-size-14)">Text 14</div>
+          <div style="font-size: var(--font-size-16)">Text 16</div>
+          <div style="font-size: var(--font-size-20)">Text 20</div>
+          <div style="font-size: var(--font-size-24)">Text 24</div>
+          <div style="font-size: var(--font-size-32)">Text 32</div>
+          <div style="font-size: var(--font-size-48)">Text 48</div>
+        </div>
+        <div>
+          <div class="bold" style="font-size: var(--font-size-10)">Text 10</div>
+          <div class="bold" style="font-size: var(--font-size-12)">Text 12</div>
+          <div class="bold" style="font-size: var(--font-size-14)">Text 14</div>
+          <div class="bold" style="font-size: var(--font-size-16)">Text 16</div>
+          <div class="bold" style="font-size: var(--font-size-20)">Text 20</div>
+          <div class="bold" style="font-size: var(--font-size-24)">Text 24</div>
+          <div class="bold" style="font-size: var(--font-size-32)">Text 32</div>
+          <div class="bold" style="font-size: var(--font-size-48)">Text 48</div>
+        </div>
+        <div>
+          <div class="light" style="font-size: var(--font-size-10)">Text 10</div>
+          <div class="light" style="font-size: var(--font-size-12)">Text 12</div>
+          <div class="light" style="font-size: var(--font-size-14)">Text 14</div>
+          <div class="light" style="font-size: var(--font-size-16)">Text 16</div>
+          <div class="light" style="font-size: var(--font-size-20)">Text 20</div>
+          <div class="light" style="font-size: var(--font-size-24)">Text 24</div>
+          <div class="light" style="font-size: var(--font-size-32)">Text 32</div>
+          <div class="light" style="font-size: var(--font-size-48)">Text 48</div>
+        </div>
+        <div>
+          <h1>Header 1</h1>
+          <h2>Header 2</h2>
+          <h3>Header 3</h3>
+          <h4>Header 4</h4>
+          <h5>Header 5</h5>
+          <h6>Header 6</h6>
+        </div>
+        <div>
+          <label>Label</label>
+          <div class="description">Description</div>
+        </div>
+      </div>
+
+    </section>
+    <section>
       <h2>Buttons</h2>
       <div class="button-grid">
         <div></div><div>Primary</div><div>icon-right</div><div>Secondary</div><div>icon-right</div><div>Destructive</div><div>icon-right</div>
@@ -271,36 +350,99 @@
     <section>
       <h2>Accordions</h2>
       <div class="accordion-grid">
-        <div></div><div>Default</div><div>Hovered</div><div>Open</div>
-        <div>Title</div><div><select>Title</select></div><div><select>Title</select></div><div><select>Title</select></div>
-        <div></div><div><select>Title</select></div><div><select>Title</select></div><div><select>Title</select></div>
-        <div></div><div><select>Title</select></div><div><select>Title</select></div><div><select>Title</select></div>
-        <div></div><div><select>Title</select></div><div><select>Title</select></div><div><select>Title</select></div>
+        <div>Closed</div><div>Open</div>
+        
+        <div>
+          <details>
+            <summary>Title</summary>
+            Content of the accordion.
+          </details>
+        </div>
+        <div>
+          <details open>
+            <summary>Title</summary>
+            Content of the accordion.
+          </details>
+        </div>
 
-        <div>Title + subtitle</div><div><select>Title</select></div><div><select>Title</select></div><div><select>Title</select></div>
-        <div></div><div><select>Title</select></div><div><select>Title</select></div><div><select>Title</select></div>
-        <div></div><div><select>Title</select></div><div><select>Title</select></div><div><select>Title</select></div>
-        <div></div><div><select>Title</select></div><div><select>Title</select></div><div><select>Title</select></div>
+        <div>
+          <details>
+            <summary>Title<div class="badge">Badge</div></summary>
+            Content of the accordion.
+          </details>
+        </div>
+        <div>
+          <details open>
+            <summary>Title<div class="badge">Badge</div></summary>
+            Content of the accordion.
+          </details>
+        </div>
 
-        <div>Title + icon</div><div><select>Title</select></div><div><select>Title</select></div><div><select>Title</select></div>
-        <div></div><div><select>Title</select></div><div><select>Title</select></div><div><select>Title</select></div>
-        <div></div><div><select>Title</select></div><div><select>Title</select></div><div><select>Title</select></div>
-        <div></div><div><select>Title</select></div><div><select>Title</select></div><div><select>Title</select></div>
+        <div>
+          <details>
+            <summary>Title<a href="#">Link</a></summary>
+            Content of the accordion.
+          </details>
+        </div>
+        <div>
+          <details open>
+            <summary>Title<a href="#">Link</a></summary>
+            Content of the accordion.
+          </details>
+        </div>
 
-        <div>Title + subtitle + icon</div><div><select>Title</select></div><div><select>Title</select></div><div><select>Title</select></div>
-        <div></div><div><select>Title</select></div><div><select>Title</select></div><div><select>Title</select></div>
-        <div></div><div><select>Title</select></div><div><select>Title</select></div><div><select>Title</select></div>
-        <div></div><div><select>Title</select></div><div><select>Title</select></div><div><select>Title</select></div>
+        <div>
+          <details>
+            <summary>Title<button class="secondary">Button</button></summary>
+            Content of the accordion.
+          </details>
+        </div>
+        <div>
+          <details open>
+            <summary>Title<button class="secondary">Button</button></summary>
+            Content of the accordion.
+          </details>
+        </div>
       </div>
     </section>
     <section>
       <h2>Tooltips</h2>
       <div class="tooltip-grid">
-        <div>A tooltip can provide additional context about the field next to it.</div><div>A tooltip can provide additional context about the field next to it.</div>
-        <div>A tooltip can provide additional context about the field next to it.</div><div>A tooltip can provide additional context about the field next to it.</div>
-        <div>A tooltip can provide additional context about the field next to it.</div><div>A tooltip can provide additional context about the field next to it.</div>
+        <div><div class="tooltip">A tooltip can provide additional context about the field next to it.</div></div>
       </div>
     </section>
+   
+    <section>
+      <h2>Banners</h2>
+      <div class="banner-grid">
+        <div>Default</div>
+        <div>Positive</div>
+        <div>Warning</div>
+        <div>Negative</div>
+        <div>
+          <div class="banner">
+            <div><div>Banner title</div><div>Banner description goes here.</div><button class="secondary">Button</button></div>
+            <i>x</i>
+          </div>
+        </div>
+        <div class="banner positive">
+          <i>!</i>
+          <div><div>Banner title</div><div>Banner description goes here.</div><button class="secondary">Button</button></div>
+          <i>x</i>
+        </div>
+        <div class="banner warning">
+          <i>!</i>
+          <div><div>Banner title</div><div>Banner description goes here.</div><button class="secondary">Button</button></div>
+          <i>x</i>
+        </div>
+        <div class="banner negative">
+          <i>!</i>
+          <div><div>Banner title</div><div>Banner description goes here.</div><button class="secondary">Button</button></div>
+          <i>x</i>
+        </div>
+      </div>
+    </section>
+
     <section>
       <h2>Menus</h2>
       <div class="menu-grid">
@@ -508,18 +650,6 @@
         </div>
       </div>
     </section>
-    <section>
-      <h2>Banners</h2>
-      <div class="banner-grid">
-        <div>Default</div>
-        <div>Caution</div>
-        <div>Critical</div>
-        <div>Notice title</div>
-        <div>Notice title</div>
-        <div>Notice title</div>
-      </div>
-    </section>
-
 
     <section>
       <h2>Form Fields</h2>
