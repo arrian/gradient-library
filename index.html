@@ -69,30 +69,122 @@
         <div></div>
         <div>On</div>
         <div>Off</div>
+        <div>Focused</div>
         <div>Disabled</div>
-        <div>Live</div>
         <div>Medium</div>
         <div><input checked class="switch" type="checkbox"></div>
         <div><input class="switch" type="checkbox"></div>
+        <div><input data-focused class="switch" type="checkbox"></div>
         <div><input disabled class="switch" type="checkbox"></div>
-        <div><input class="switch" type="checkbox"></div>
         <div></div>
         <div><input checked class="switch" type="checkbox"></div>
         <div><input class="switch" type="checkbox"></div>
+        <div><input data-focused class="switch" type="checkbox"></div>
         <div><input disabled class="switch" type="checkbox"></div>
-        <div><input class="switch" type="checkbox"></div>
         <div>Small</div>
         <div><input checked class="switch small" type="checkbox"></div>
         <div><input class="switch small" type="checkbox"></div>
+        <div><input data-focused class="switch small" type="checkbox"></div>
         <div><input disabled class="switch small" type="checkbox"></div>
-        <div><input class="switch small" type="checkbox"></div>
         <div></div>
         <div><input checked class="switch small" type="checkbox"></div>
         <div><input class="switch small" type="checkbox"></div>
+        <div><input data-focused class="switch small" type="checkbox"></div>
         <div><input disabled class="switch small" type="checkbox"></div>
-        <div><input class="switch small" type="checkbox"></div>
       </div>
     </section>
+
+    <section>
+      <h2>Text Fields</h2>
+      <div class="text-field-grid">
+        <div></div>
+        <div>Default</div>
+        <div>Focused</div>
+        <div>Error</div>
+        <div>Disabled</div>
+        <div>Medium</div>
+        <div><label><input type="text" placeholder="Placeholder"></label></div>
+        <div><label><input data-focused type="text"></label></div>
+        <div><label><input data-invalid type="text" placeholder="Placeholder"></label></div>
+        <div><label><input disabled type="text"></label></div>
+        <div>Small</div>
+        <div><label><input type="text" placeholder="Placeholder" class="small"></label></div>
+        <div><label><input data-focused type="text" class="small"></label></div>
+        <div><label><input data-invalid type="text" class="small" placeholder="Placeholder"></label></div>
+        <div><label><input disabled type="text" class="small"></label></div>
+        <div>Large</div>
+        <div><label><input type="text" placeholder="Placeholder" class="large"></label></div>
+        <div><label><input data-focused type="text" class="large"></label></div>
+        <div><label><input data-invalid type="text" class="large" placeholder="Placeholder"></label></div>
+        <div><label><input disabled type="text" class="large"></label></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selects</h2>
+      <div class="select-grid">
+        <div></div>
+        <div>Default</div>
+        <div>Focused</div>
+        <div>Error</div>
+        <div>Disabled</div>
+        <div>Medium</div>
+        <div><select><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div>Small</div>
+        <div><select><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div>Large</div>
+        <div><select><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <div><select disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Chips</h2>
+      <div class="chip-grid">
+        <div></div>
+        <div>Default</div>
+        <div>Hovered</div>
+        <div>Focused</div>
+        <div>Selected</div>
+        <div>Empty</div>
+        <div><button class="chip" data-empty><i>+</i> Status</button></div>
+        <div><button class="chip" data-empty data-hovered><i>+</i> Status</button></div>
+        <div><button class="chip" data-empty data-focused><i>+</i> Status</button></div>
+        <div></div>
+        <div>Single</div>
+        <div><button class="chip" data-single><i>X</i> example@example.com</button></div>
+        <div><button class="chip" data-single data-hovered><i>X</i> example@example.com</button></div>
+        <div><button class="chip" data-single data-focused><i>X</i> example@example.com</button></div>
+        <div></div>
+        <div>Multiple</div>
+        <div><button class="chip" data-multiple><i>X</i> Status <span>Succeeded, Refunded</span> <i>V</i></button></div>
+        <div><button class="chip" data-multiple data-hovered><i>X</i> Status <span>Succeeded, Refunded</span> <i>V</i></button></div>
+        <div><button class="chip" data-multiple data-focused><i>X</i> Status <span>Succeeded, Refunded</span> <i>V</i></button></div>
+        <div><button class="chip" data-multiple><i>X</i> Status <span>Succeeded, Refunded</span> <i>V</i></button></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Toast</h2>
+      <div class="toast-grid">
+        <div>Default</div>
+        <div>Positive</div>
+        <div>Warning</div>
+        <div><div class="toast">1 new message</div></div>
+        <div><div class="toast positive">Report downloaded</div></div>
+        <div><div class="toast warning">Server error</div></div>
+      </div>
+    </section>
+
+
     <section>
       <h2>Accordions</h2>
       <div class="accordion-grid">
@@ -380,42 +472,7 @@
         <div>Notice title</div>
       </div>
     </section>
-    <section>
-      <h2>Toast</h2>
-      <div class="toast-grid">
-        <div>Default</div>
-        <div>Success</div>
-        <div>Caution</div>
-        <div>1 new message</div>
-        <div>Report downloaded</div>
-        <div>Server error</div>
-      </div>
-    </section>
-    <section>
-      <h2>Chips</h2>
-      <div class="chip-grid">
-        <div></div>
-        <div>Default</div>
-        <div>Hovered</div>
-        <div>Focused</div>
-        <div>Selected</div>
-        <div>Suggested</div>
-        <div>Status</div>
-        <div>Status</div>
-        <div>Status</div>
-        <div></div>
-        <div>Single</div>
-        <div>example@example.com</div>
-        <div>example@example.com</div>
-        <div>example@example.com</div>
-        <div></div>
-        <div>Active</div>
-        <div>Status | Succeeded, Refunded</div>
-        <div>Status | Succeeded, Refunded</div>
-        <div>Status | Succeeded, Refunded</div>
-        <div>Status | Succeeded, Refunded</div>
-      </div>
-    </section>
+
     <section>
       <h2>Dates</h2>
       <div class="date-grid">
@@ -423,56 +480,6 @@
         <div>Focused</div>
         <div>Error</div>
         <div>Disabled</div>
-        <div><input type="text"></div>
-        <div><input type="text"></div>
-        <div><input type="text"></div>
-        <div><input type="text"></div>
-      </div>
-    </section>
-    <section>
-      <h2>Selects</h2>
-      <div class="select-grid">
-        <div></div>
-        <div>Default</div>
-        <div>Focused</div>
-        <div>Error</div>
-        <div>Disabled</div>
-        <div>Medium</div>
-        <div><select></select></div>
-        <div><select></select></div>
-        <div><select></select></div>
-        <div><select></select></div>
-        <div>Small</div>
-        <div><select></select></div>
-        <div><select></select></div>
-        <div><select></select></div>
-        <div><select></select></div>
-        <div>Large</div>
-        <div><select></select></div>
-        <div><select></select></div>
-        <div><select></select></div>
-        <div><select></select></div>
-      </div>
-    </section>
-    <section>
-      <h2>Text Fields</h2>
-      <div class="text-field-grid">
-        <div></div>
-        <div>Default</div>
-        <div>Focused</div>
-        <div>Error</div>
-        <div>Disabled</div>
-        <div>Medium</div>
-        <div><input type="text"></div>
-        <div><input type="text"></div>
-        <div><input type="text"></div>
-        <div><input type="text"></div>
-        <div>Small</div>
-        <div><input type="text"></div>
-        <div><input type="text"></div>
-        <div><input type="text"></div>
-        <div><input type="text"></div>
-        <div>Large</div>
         <div><input type="text"></div>
         <div><input type="text"></div>
         <div><input type="text"></div>
