@@ -76,7 +76,7 @@ section {
 }
 
 .tab-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .banner-grid {
@@ -109,4 +109,9 @@ section {
 
 .text-area-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.placeholder-grid {
+    grid-template-columns: 1fr 1fr 1fr;
 }

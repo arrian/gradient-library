@@ -141,7 +141,7 @@
   --font-secondary-color: var(--color-neutral-medium);
   --background-color: var(--color-neutral);
   --background-color-2: var(--color-neutral-ultra-light);
-  --border-color: var(--color-neutral-ultra-light);
+  --border-color: var(--color-neutral-light);
 }
 
 *,
@@ -784,7 +784,7 @@ details > summary {
   cursor: pointer;
   padding: var(--space-3) var(--space-2) var(--space-3) var(--space-6);
   margin-bottom: var(--space-3);
-  border-bottom: 2px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   background-image: var(--icon-caret-down);
   background-repeat: no-repeat;
   background-size: 1em 1em;
@@ -807,16 +807,72 @@ details > summary::marker {
 }
 
 details {
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
   padding: 0 0 var(--space-3) 0;
 }
 
 details[open] {
-  border-bottom: 2px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Menus */
+
+menu.tabs {
+  display: flex;
+  padding-inline-start: 0;
+}
+
+menu.tabs > li {
+  list-style: none;
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--space-3);
+  cursor: pointer;
+  transition: border var(--transition-time) var(--transition-easing), color var(--transition-time) var(--transition-easing);
+}
+
+menu.tabs > li[data-active] {
+  color: var(--button-primary-color);
+  border-bottom: 2px solid var(--button-primary-color);
+}
+
+menu.tabs > li:hover {
+  color: var(--button-primary-hover-color);
+  border-bottom: 2px solid var(--button-primary-hover-color);
+}
+
+menu.tabs.fitted > li {
+  flex-grow: 1;
+  text-align: center;
+}
+
+menu.tabs.small {
+  font-size: var(--font-size-12);
 }
 
 
+/* Effects */
 
+.shimmer {
+  background: var(--color-neutral-ultra-light);
+  background-image: linear-gradient(to right, var(--color-neutral-ultra-light) 0%, var(--color-overlay) 20%, var(--color-neutral-ultra-light) 40%, var(--color-neutral-ultra-light) 100%);
+  background-repeat: no-repeat;
+  position: relative; 
+  
+  animation-duration: 1s;
+  animation-fill-mode: forwards; 
+  animation-iteration-count: infinite;
+  animation-name: placeholderShimmer;
+  animation-timing-function: var(--transition-easing);
+}
 
+@keyframes placeholderShimmer {
+  0% {
+    background-position: -500px 0;
+  }
+  
+  100% {
+    background-position: 500px 0; 
+  }
+}
 
 
