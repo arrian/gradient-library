@@ -21,33 +21,10 @@
   --color-negative-dark: #a80004;
   --color-negative-medium: #f10007;
   --color-negative-light: #feadb0;
-
-  /* --color-neutral-ultra-light: #3C3C3C;
-  --color-neutral-light: #626262;
-  --color-neutral-medium: #828282;
-  --color-neutral-dark: #c2c2c2;
-  --color-neutral-ultra-dark: #F5F5F5;
-  --color-neutral: #000; 
-  
-  --color-accent-light: #055861;
-  --color-accent-medium: #087e8b;
-  --color-accent-dark: #84bfc5;
-  
-  --color-positive-light: #24693c;
-  --color-positive-medium: #3cb064;
-  --color-positive-dark: #9adcb1;
-  
-  --color-warning-light: #a27817;
-  --color-warning-medium: #e6b94f;
-  --color-warning-dark: #f2dca8;
-  
-  --color-negative-light: #a80004;
-  --color-negative-medium: #f10007;
-  --color-negative-dark: #feadb0; */
   
   
   --color-transparent: rgba(255, 255, 255, 0);
-  --color-overlay: rgba(255, 255, 255, 0.7);
+  --color-overlay: rgba(255, 255, 255, 0.4);
   --color-shadow: rgba(0, 0, 0, 0.06);
 
   --font-weight-light: 300;
@@ -188,28 +165,51 @@ body {
 
 /* Forms / Fields / Labels */
 
+input {
+  margin: 0;
+}
+
 fieldset {
   padding: 0;
   margin: 0;
   border: none;
+  display: flex;
 }
 
-label {
+fieldset > label {
   display: flex;
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-14);
   user-select: none;
-}
-
-.label-description {
   margin-bottom: var(--space-2);
-  margin-left: var(--space-7);
 }
 
-.description, .label-description {
+fieldset > label > input {
+  margin-right: var(--space-3);
+}
+
+fieldset > label .description {
+  margin-top: var(--space-1);
+}
+
+fieldset > label .error {
+  margin-top: var(--space-1);
+}
+
+fieldset input[type="text"]:not(:first-child), fieldset input[type="date"]:not(:first-child), fieldset textarea:not(:first-child), fieldset select:not(:first-child) {
+  margin-top: var(--space-2);
+}
+
+.description {
   display: block;
   color: var(--font-secondary-color);
   font-size: var(--font-size-12);
+}
+
+.error {
+  color: var(--color-negative-medium);
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight);
 }
 
 /* Buttons */
@@ -347,7 +347,6 @@ a:disabled, a[data-disabled] {
 
 .switch {
   position: relative;
-  display: block;
   border: none;
   appearance: none;
   height: var(--space-5);
@@ -356,7 +355,6 @@ a:disabled, a[data-disabled] {
   border-radius: 12px;
   outline: var(--focus-outline-hidden);
   transition: outline var(--transition-time) var(--transition-easing), background-color var(--transition-time) var(--transition-easing);
-  margin: 0;
   box-shadow: var(--box-shadow);
 }
 
@@ -414,7 +412,7 @@ a:disabled, a[data-disabled] {
 
 /* Text Input */
 
-input[type="text"] {
+input[type="text"], input[type="email"], input[type="password"], input[type="search"] {
   padding: var(--space-2) var(--space-3);
   margin: 0;
   font-size: var(--font-size-14);
@@ -428,25 +426,27 @@ input[type="text"] {
   color: var(--font-color);
 }
 
-input[type="text"].small {
+input[type="text"].small, input[type="email"].small, input[type="password"].small, input[type="search"].small {
   font-size: var(--font-size-12);
   padding: var(--space-2) var(--space-3);
 }
 
-input[type="text"].large {
+input[type="text"].large, input[type="email"].large, input[type="password"].large, input[type="search"].large {
   font-size: var(--font-size-16);
   padding: var(--space-2) var(--space-3);
 }
 
-input[type="text"]:focus, input[type="text"][data-focused] {
+input[type="text"]:focus, input[type="text"][data-focused], input[type="email"]:focus, input[type="email"][data-focused],
+input[type="password"]:focus, input[type="password"][data-focused], input[type="search"]:focus, input[type="search"][data-focused] {
   outline: var(--focus-outline);
 }
 
-input[type="text"]:invalid, input[type="text"][data-invalid] {
-  border: 1px solid var(--color-negative-dark);
+input[type="text"]:invalid, input[type="text"][data-invalid], input[type="email"]:invalid, input[type="email"][data-invalid],
+input[type="password"]:invalid, input[type="password"][data-invalid], input[type="search"]:invalid, input[type="search"][data-invalid] {
+  border: 1px solid var(--color-negative-medium);
 }
 
-input[type="text"]:disabled {
+input[type="text"]:disabled, input[type="email"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled {
   opacity: var(--disabled-opacity);
   background-color: var(--color-neutral-ultra-light);
 }
@@ -485,7 +485,7 @@ textarea:focus, textarea[data-focused] {
 }
 
 textarea:invalid, textarea[data-invalid] {
-  border: 1px solid var(--color-negative-dark);
+  border: 1px solid var(--color-negative-medium);
 }
 
 textarea:disabled {
@@ -513,6 +513,7 @@ select {
   box-shadow: var(--box-shadow);
   background-color: var(--background-color);
   color: var(--font-color);
+  width: 100%;
 }
 
 select.small {
@@ -530,7 +531,7 @@ select:focus, select[data-focused] {
 }
 
 select:invalid, select[data-invalid] {
-  border: 1px solid var(--color-negative-dark);
+  border: 1px solid var(--color-negative-medium);
 }
 
 select:disabled {
@@ -544,7 +545,6 @@ input[type="checkbox"]:not(.switch) {
   display: block;
   border: none;
   appearance: none;
-  margin: var(--space-1) var(--space-3) 0 0;
   height: var(--space-4);
   width: var(--space-4);
   background-color: var(--color-neutral);
@@ -580,7 +580,6 @@ input[type="radio"] {
   display: block;
   border: none;
   appearance: none;
-  margin: var(--space-1) var(--space-3) 0 0;
   height: var(--space-4);
   width: var(--space-4);
   background-color: var(--color-neutral);
@@ -655,7 +654,7 @@ input[type="date"]:focus, input[type="date"][data-focused] {
 }
 
 input[type="date"]:invalid, input[type="date"][data-invalid] {
-  border: 1px solid var(--color-negative-dark);
+  border: 1px solid var(--color-negative-medium);
 }
 
 input[type="date"]:disabled {
@@ -852,20 +851,23 @@ menu.tabs.small {
 
 /* Effects */
 
-.shimmer {
-  background: var(--color-neutral-ultra-light);
-  background-image: linear-gradient(to right, var(--color-neutral-ultra-light) 0%, var(--color-overlay) 20%, var(--color-neutral-ultra-light) 40%, var(--color-neutral-ultra-light) 100%);
+.shimmer, .placeholder {
+  background-image: linear-gradient(to right, transparent 0%, var(--color-overlay) 20%, transparent 50%, transparent 100%);
   background-repeat: no-repeat;
   position: relative; 
   
   animation-duration: 1s;
   animation-fill-mode: forwards; 
   animation-iteration-count: infinite;
-  animation-name: placeholderShimmer;
+  animation-name: shimmer;
   animation-timing-function: var(--transition-easing);
 }
 
-@keyframes placeholderShimmer {
+.placeholder {
+  background-color: var(--color-neutral-ultra-light);
+}
+
+@keyframes shimmer {
   0% {
     background-position: -500px 0;
   }

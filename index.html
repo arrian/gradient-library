@@ -6,7 +6,18 @@
     <link rel="stylesheet" href="library-demo.css">
   </head>
   <body>
-    <h1>Gradient Library</h1>
+    <div class="demo-header">
+      <h1>Gradient Library</h1>
+
+      <fieldset>
+        <label>
+          <input type="checkbox" class="dark-mode-toggle switch">
+          <div>
+            Dark mode
+          </div>
+        </label>
+      </fieldset>
+    </div>
 
 
     <section>
@@ -82,8 +93,10 @@
           <h6>Header 6</h6>
         </div>
         <div>
-          <label>Label</label>
-          <div class="description">Description</div>
+          <fieldset>
+            <label><div>Label<div class="description">Description</div></div></label>
+          </fieldset>
+          <div class="error">Error message</div>
         </div>
       </div>
 
@@ -153,20 +166,20 @@
         <div>Focused</div>
         <div>Disabled</div>
         <div>Medium</div>
-        <div><input checked class="switch" type="checkbox"></div>
-        <div><input class="switch" type="checkbox"></div>
-        <div><input data-focused class="switch" type="checkbox"></div>
-        <div><input disabled class="switch" type="checkbox"></div>
+        <fieldset><label><input checked class="switch" type="checkbox"><div>Label<span class="description">Description</span></div></label></fieldset>
+        <fieldset><label><input class="switch" type="checkbox"><div>Label<span class="description">Description</span></div></label></fieldset>
+        <fieldset><label><input data-focused class="switch" type="checkbox"><div>Label<span class="description">Description</span></div></label></fieldset>
+        <fieldset><label><input disabled class="switch" type="checkbox"><div>Label<span class="description">Description</span></div></label></fieldset>
         <div></div>
         <div><input checked class="switch" type="checkbox"></div>
         <div><input class="switch" type="checkbox"></div>
         <div><input data-focused class="switch" type="checkbox"></div>
         <div><input disabled class="switch" type="checkbox"></div>
         <div>Small</div>
-        <div><input checked class="switch small" type="checkbox"></div>
-        <div><input class="switch small" type="checkbox"></div>
-        <div><input data-focused class="switch small" type="checkbox"></div>
-        <div><input disabled class="switch small" type="checkbox"></div>
+        <fieldset><label><input checked class="switch small" type="checkbox"><div>Label<span class="description">Description</span></div></label></fieldset>
+        <fieldset><label><input class="switch small" type="checkbox"><div>Label<span class="description">Description</span></div></label></fieldset>
+        <fieldset><label><input data-focused class="switch small" type="checkbox"><div>Label<span class="description">Description</span></div></label></fieldset>
+        <fieldset><label><input disabled class="switch small" type="checkbox"><div>Label<span class="description">Description</span></div></label></fieldset>
         <div></div>
         <div><input checked class="switch small" type="checkbox"></div>
         <div><input class="switch small" type="checkbox"></div>
@@ -184,20 +197,20 @@
         <div>Error</div>
         <div>Disabled</div>
         <div>Medium</div>
-        <div><label><input type="text" placeholder="Placeholder"></label></div>
-        <div><label><input data-focused type="text"></label></div>
-        <div><label><input data-invalid type="text" placeholder="Placeholder"></label></div>
-        <div><label><input disabled type="text"></label></div>
+        <fieldset><label><div>Label<span class="description">Description</span><input type="text" placeholder="Placeholder"></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><input data-focused type="text"></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><input data-invalid type="text" placeholder="Placeholder"><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><input disabled type="text"></div></label></fieldset>
         <div>Small</div>
-        <div><label><input type="text" placeholder="Placeholder" class="small"></label></div>
-        <div><label><input data-focused type="text" class="small"></label></div>
-        <div><label><input data-invalid type="text" class="small" placeholder="Placeholder"></label></div>
-        <div><label><input disabled type="text" class="small"></label></div>
+        <fieldset><label><div>Label<span class="description">Description</span><input type="text" placeholder="Placeholder" class="small"></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><input data-focused type="text" class="small"></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><input data-invalid type="text" class="small" placeholder="Placeholder"><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><input disabled type="text" class="small"></div></label></fieldset>
         <div>Large</div>
-        <div><label><input type="text" placeholder="Placeholder" class="large"></label></div>
-        <div><label><input data-focused type="text" class="large"></label></div>
-        <div><label><input data-invalid type="text" class="large" placeholder="Placeholder"></label></div>
-        <div><label><input disabled type="text" class="large"></label></div>
+        <fieldset><label><div>Label<span class="description">Description</span><input type="text" placeholder="Placeholder" class="large"></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><input data-focused type="text" class="large"></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><input data-invalid type="text" class="large" placeholder="Placeholder"><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><input disabled type="text" class="large"></div></label></fieldset>
       </div>
     </section>
 
@@ -210,20 +223,20 @@
         <div>Error</div>
         <div>Disabled</div>
         <div>Medium</div>
-        <div><textarea rows="5" placeholder="Placeholder"></textarea></div>
-        <div><textarea data-focused rows="5"></textarea></div>
-        <div><textarea data-invalid rows="5" placeholder="Placeholder"></textarea></div>
-        <div><textarea disabled rows="5"></textarea></div>
+        <fieldset><label><div>Label<span class="description">Description</span><textarea rows="5" placeholder="Placeholder"></textarea></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><textarea data-focused rows="5"></textarea></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><textarea data-invalid rows="5" placeholder="Placeholder"></textarea><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><textarea disabled rows="5"></textarea></div></label></fieldset>
         <div>Small</div>
-        <div><textarea class="small" rows="5" placeholder="Placeholder"></textarea></div>
-        <div><textarea class="small" data-focused rows="5"></textarea></div>
-        <div><textarea class="small" data-invalid rows="5" placeholder="Placeholder"></textarea></div>
-        <div><textarea class="small" disabled rows="5"></textarea></div>
+        <fieldset><label><div>Label<span class="description">Description</span><textarea class="small" rows="5" placeholder="Placeholder"></textarea></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><textarea class="small" data-focused rows="5"></textarea></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><textarea class="small" data-invalid rows="5" placeholder="Placeholder"></textarea><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><textarea class="small" disabled rows="5"></textarea></div></label></fieldset>
         <div>Large</div>
-        <div><textarea class="large" rows="5" placeholder="Placeholder"></textarea></div>
-        <div><textarea class="large" data-focused rows="5"></textarea></div>
-        <div><textarea class="large" data-invalid rows="5" placeholder="Placeholder"></textarea></div>
-        <div><textarea class="large" disabled rows="5"></textarea></div>
+        <fieldset><label><div>Label<span class="description">Description</span><textarea class="large" rows="5" placeholder="Placeholder"></textarea></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><textarea class="large" data-focused rows="5"></textarea></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><textarea class="large" data-invalid rows="5" placeholder="Placeholder"></textarea><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><textarea class="large" disabled rows="5"></textarea></div></label></fieldset>
       </div>
     </section>
 
@@ -236,20 +249,20 @@
         <div>Error</div>
         <div>Disabled</div>
         <div>Medium</div>
-        <div><select><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
-        <div><select data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
-        <div><select data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
-        <div><select disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <fieldset><label><div>Label<span class="description">Description</span><select><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><select data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><select data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><select disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
         <div>Small</div>
-        <div><select class="small"><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
-        <div><select class="small" data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
-        <div><select class="small" data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
-        <div><select class="small" disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <fieldset><label><div>Label<span class="description">Description</span><select class="small"><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><select class="small" data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><select class="small" data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><select class="small" disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
         <div>Large</div>
-        <div><select class="large"><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
-        <div><select class="large" data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
-        <div><select class="large" data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
-        <div><select class="large" disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div>
+        <fieldset><label><div>Label<span class="description">Description</span><select class="large"><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><select class="large" data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><select class="large" data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><select class="large" disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
       </div>
     </section>
 
@@ -261,11 +274,11 @@
         <div>Focused</div>
         <div>Focused + selected</div>
         <div>Disabled</div>
-        <fieldset><label><input type="checkbox"><span>Label</span></label><span class="label-description">Description</span></fieldset>
-        <fieldset><label><input type="checkbox" checked><span>Label</span></label><span class="label-description">Description</span></fieldset>
-        <fieldset><label><input type="checkbox" data-focused><span>Label</span></label><span class="label-description">Description</span></fieldset>
-        <fieldset><label><input type="checkbox" checked data-focused><span>Label</span></label><span class="label-description">Description</span></fieldset>
-        <fieldset><label><input type="checkbox" disabled><span>Label</span></label><span class="label-description">Description</span></fieldset>
+        <fieldset><label><input type="checkbox" name="test"><div>Label<span class="description">Description</span></div></label></fieldset>
+        <fieldset><label><input type="checkbox" checked><div>Label<span class="description">Description</span></div></label></fieldset>
+        <fieldset><label><input type="checkbox" data-focused><div>Label<span class="description">Description</span></div></label></fieldset>
+        <fieldset><label><input type="checkbox" checked data-focused><div>Label<span class="description">Description</span></div></label></fieldset>
+        <fieldset><label><input type="checkbox" disabled><div>Label<span class="description">Description</span></div></label></fieldset>
         <div><input type="checkbox"></div>
         <div><input type="checkbox" checked></div>
         <div><input type="checkbox" data-focused></div>
@@ -282,11 +295,11 @@
         <div>Focused</div>
         <div>Focused + selected</div>
         <div>Disabled</div>
-        <fieldset><label><input type="radio"><span>Label</span></label><span class="label-description">Description</span></fieldset>
-        <fieldset><label><input type="radio" checked><span>Label</span></label><span class="label-description">Description</span></fieldset>
-        <fieldset><label><input type="radio" data-focused><span>Label</span></label><span class="label-description">Description</span></fieldset>
-        <fieldset><label><input type="radio" checked data-focused><span>Label</span></label><span class="label-description">Description</span></fieldset>
-        <fieldset><label><input type="radio" disabled><span>Label</span></label><span class="label-description">Description</span></fieldset>
+        <fieldset><label><input type="radio"><div>Label<span class="description">Description</span></div></label></fieldset>
+        <fieldset><label><input type="radio" checked><div>Label<span class="description">Description</span></div></label></fieldset>
+        <fieldset><label><input type="radio" data-focused><div>Label<span class="description">Description</span></div></label></fieldset>
+        <fieldset><label><input type="radio" checked data-focused><div>Label<span class="description">Description</span></div></label></fieldset>
+        <fieldset><label><input type="radio" disabled><div>Label<span class="description">Description</span></div></label></fieldset>
         <div><input type="radio"></div>
         <div><input type="radio" checked></div>
         <div><input type="radio" data-focused></div>
@@ -302,10 +315,10 @@
         <div>Focused</div>
         <div>Error</div>
         <div>Disabled</div>
-        <div><input type="date"></div>
-        <div><input type="date" data-focused></div>
-        <div><input type="date" data-invalid></div>
-        <div><input type="date" disabled></div>
+        <fieldset><label><div>Label<span class="description">Description</span><input type="date"></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><input type="date" data-focused></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><input type="date" data-invalid><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><input type="date" disabled></div></label></fieldset>
       </div>
     </section>
     
@@ -600,30 +613,12 @@
         <div>Box</div>
         <div>Photo</div>
         <div>
-          <div class="shimmer" style="width: 300px;height: var(--space-3)"></div>
-          <div class="shimmer" style="width: 300px;height: var(--space-3);margin-top: var(--space-2)"></div>
-          <div class="shimmer" style="width: 300px;height: var(--space-3);margin-top: var(--space-2)"></div>
+          <div class="placeholder" style="width: 300px;height: var(--space-3)"></div>
+          <div class="placeholder" style="width: 300px;height: var(--space-3);margin-top: var(--space-2)"></div>
+          <div class="placeholder" style="width: 300px;height: var(--space-3);margin-top: var(--space-2)"></div>
         </div>
-        <div><div class="shimmer" style="width: 300px;height: 100px"></div></div>
-        <div><div class="shimmer" style="width: 100px;height: 100px"></div></div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Form Fields</h2>
-      <div class="form-field-grid">
-        <div>Default</div>
-        <div>Focused</div>
-        <div>Error</div>
-        <div>Disabled</div>
-        <div><input type="text"><input type="text"></div>
-        <div><input type="text"><input type="text"></div>
-        <div><input type="text"><input type="text"></div>
-        <div><input type="text"><input type="text"></div>
-        <div><input type="text"><input type="text"></div>
-        <div><input type="text"><input type="text"></div>
-        <div><input type="text"><input type="text"></div>
-        <div><input type="text"><input type="text"></div>
+        <div><div class="placeholder" style="width: 300px;height: 100px"></div></div>
+        <div><div class="placeholder" style="width: 100px;height: 100px;border-radius:50%;"></div></div>
       </div>
     </section>
 
@@ -633,8 +628,25 @@
     <section>
       <h2>Drawers</h2>
     </section>
+    <section>
+      <h2>Modal</h2>
+    </section>
 
 
     <script src="/reload/reload.js"></script>
+
+    <script>
+      const darkModeCheckbox = document.querySelector('.dark-mode-toggle');
+
+      darkModeCheckbox.addEventListener('change', (event) => {
+        let root = document.getElementsByTagName('html')[0];
+
+        if (event.currentTarget.checked) {
+          root.setAttribute('class', 'dark-mode');
+        } else {
+          root.setAttribute('class', '');
+        }
+      })
+    </script>
   </body>
 </html>
