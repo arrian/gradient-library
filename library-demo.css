@@ -4,6 +4,7 @@ body {
     transition: background-color var(--transition-time) var(--transition-easing);
 }
 
+
 .dark-mode {
     --color-neutral-ultra-light: #3C3C3C;
     --color-neutral-light: #626262;
@@ -145,5 +146,9 @@ section {
 
 
 .placeholder-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.quantity-grid {
     grid-template-columns: 1fr 1fr 1fr;
 }

@@ -4,6 +4,7 @@
     <title>Gradient Library</title>
     <link rel="stylesheet" href="core.css">
     <link rel="stylesheet" href="library-demo.css">
+    <link rel="stylesheet" href="icons.css">
   </head>
   <body>
     <div class="demo-header">
@@ -96,7 +97,7 @@
           <fieldset>
             <label><div>Label<div class="description">Description</div></div></label>
           </fieldset>
-          <div class="error">Error message</div>
+          <div class="error"><i class="icon icon-icon-exclamation"></i> Error message</div>
         </div>
       </div>
 
@@ -107,32 +108,32 @@
         <div></div><div>Primary</div><div>icon-right</div><div>Secondary</div><div>icon-right</div><div>Destructive</div><div>icon-right</div>
         <div>Default</div>
           <div><button class="primary">Button</button></div>
-          <div><button class="primary icon-right">Button</button></div>
+          <div><button class="primary"><span>Button</span><i class="icon icon-icon-caret-right"></i></button></div>
           <div><button class="secondary">Button</button></div>
-          <div><button class="secondary icon-right">Button</button></div>
+          <div><button class="secondary"><span>Button</span><i class="icon icon-icon-tick"></i></button></div>
           <div><button class="destructive">Button</button></div>
-          <div><button class="destructive icon-right">Button</button></div>
+          <div><button class="destructive"><span>Button</span><i class="icon icon-icon-cross"></i></button></div>
         <div>Hovered</div>
           <div><button class="primary" data-hovered>Button</button></div>
-          <div><button class="primary icon-right" data-hovered>Button</button></div>
+          <div><button class="primary" data-hovered><span>Button</span><i class="icon icon-icon-caret-right"></i></button></div>
           <div><button class="secondary" data-hovered>Button</button></div>
-          <div><button class="secondary icon-right" data-hovered>Button</button></div>
+          <div><button class="secondary" data-hovered><span>Button</span><i class="icon icon-icon-tick"></i></button></div>
           <div><button class="destructive" data-hovered>Button</button></div>
-          <div><button class="destructive icon-right" data-hovered>Button</button></div>
+          <div><button class="destructive" data-hovered><span>Button</span><i class="icon icon-icon-cross"></i></button></div>
         <div>Focused</div>
           <div><button class="primary" data-focused>Button</button></div>
-          <div><button class="primary icon-right" data-focused>Button</button></div>
+          <div><button class="primary" data-focused><span>Button</span><i class="icon icon-icon-caret-right"></i></button></div>
           <div><button class="secondary" data-focused>Button</button></div>
-          <div><button class="secondary icon-right" data-focused>Button</button></div>
+          <div><button class="secondary" data-focused><span>Button</span><i class="icon icon-icon-tick"></i></button></div>
           <div><button class="destructive" data-focused>Button</button></div>
-          <div><button class="destructive icon-right" data-focused>Button</button></div>
+          <div><button class="destructive" data-focused><span>Button</span><i class="icon icon-icon-cross"></i></button></div>
         <div>Disabled</div>
           <div><button class="primary" disabled>Button</button></div>
-          <div><button class="primary icon-right" disabled>Button</button></div>
+          <div><button class="primary" disabled><span>Button</span><i class="icon icon-icon-caret-right"></i></button></div>
           <div><button class="secondary" disabled>Button</button></div>
-          <div><button class="secondary icon-right" disabled>Button</button></div>
+          <div><button class="secondary" disabled><span>Button</span><i class="icon icon-icon-tick"></i></button></div>
           <div><button class="destructive" disabled>Button</button></div>
-          <div><button class="destructive icon-right" disabled>Button</button></div>
+          <div><button class="destructive" disabled><span>Button</span><i class="icon icon-icon-cross"></i></button></div>
       </div>
     </section>
     <section>
@@ -199,17 +200,17 @@
         <div>Medium</div>
         <fieldset><label><div>Label<span class="description">Description</span><input type="text" placeholder="Placeholder"></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><input data-focused type="text"></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><input data-invalid type="text" placeholder="Placeholder"><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><input data-invalid type="text" placeholder="Placeholder"><div class="error"><i class="icon icon-icon-exclamation"></i>Error message</div></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><input disabled type="text"></div></label></fieldset>
         <div>Small</div>
         <fieldset><label><div>Label<span class="description">Description</span><input type="text" placeholder="Placeholder" class="small"></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><input data-focused type="text" class="small"></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><input data-invalid type="text" class="small" placeholder="Placeholder"><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><input data-invalid type="text" class="small" placeholder="Placeholder"><div class="error"><i class="icon icon-icon-exclamation"></i>Error message</div></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><input disabled type="text" class="small"></div></label></fieldset>
         <div>Large</div>
         <fieldset><label><div>Label<span class="description">Description</span><input type="text" placeholder="Placeholder" class="large"></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><input data-focused type="text" class="large"></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><input data-invalid type="text" class="large" placeholder="Placeholder"><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><input data-invalid type="text" class="large" placeholder="Placeholder"><div class="error"><i class="icon icon-icon-exclamation"></i>Error message</div></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><input disabled type="text" class="large"></div></label></fieldset>
       </div>
     </section>
@@ -225,17 +226,17 @@
         <div>Medium</div>
         <fieldset><label><div>Label<span class="description">Description</span><textarea rows="5" placeholder="Placeholder"></textarea></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><textarea data-focused rows="5"></textarea></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><textarea data-invalid rows="5" placeholder="Placeholder"></textarea><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><textarea data-invalid rows="5" placeholder="Placeholder"></textarea><div class="error"><i class="icon icon-icon-exclamation"></i>Error message</div></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><textarea disabled rows="5"></textarea></div></label></fieldset>
         <div>Small</div>
         <fieldset><label><div>Label<span class="description">Description</span><textarea class="small" rows="5" placeholder="Placeholder"></textarea></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><textarea class="small" data-focused rows="5"></textarea></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><textarea class="small" data-invalid rows="5" placeholder="Placeholder"></textarea><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><textarea class="small" data-invalid rows="5" placeholder="Placeholder"></textarea><div class="error"><i class="icon icon-icon-exclamation"></i>Error message</div></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><textarea class="small" disabled rows="5"></textarea></div></label></fieldset>
         <div>Large</div>
         <fieldset><label><div>Label<span class="description">Description</span><textarea class="large" rows="5" placeholder="Placeholder"></textarea></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><textarea class="large" data-focused rows="5"></textarea></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><textarea class="large" data-invalid rows="5" placeholder="Placeholder"></textarea><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><textarea class="large" data-invalid rows="5" placeholder="Placeholder"></textarea><div class="error"><i class="icon icon-icon-exclamation"></i>Error message</div></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><textarea class="large" disabled rows="5"></textarea></div></label></fieldset>
       </div>
     </section>
@@ -251,17 +252,17 @@
         <div>Medium</div>
         <fieldset><label><div>Label<span class="description">Description</span><select><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><select data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><select data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><select data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select><div class="error"><i class="icon icon-icon-exclamation"></i>Error message</div></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><select disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
         <div>Small</div>
         <fieldset><label><div>Label<span class="description">Description</span><select class="small"><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><select class="small" data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><select class="small" data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><select class="small" data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select><div class="error"><i class="icon icon-icon-exclamation"></i>Error message</div></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><select class="small" disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
         <div>Large</div>
         <fieldset><label><div>Label<span class="description">Description</span><select class="large"><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><select class="large" data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><select class="large" data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><select class="large" data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select><div class="error"><i class="icon icon-icon-exclamation"></i>Error message</div></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><select class="large" disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
       </div>
     </section>
@@ -317,8 +318,21 @@
         <div>Disabled</div>
         <fieldset><label><div>Label<span class="description">Description</span><input type="date"></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><input type="date" data-focused></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><input type="date" data-invalid><div class="error">Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><input type="date" data-invalid><div class="error"><i class="icon icon-icon-exclamation"></i>Error message</div></div></label></fieldset>
         <fieldset><label><div>Label<span class="description">Description</span><input type="date" disabled></div></label></fieldset>
+      </div>
+    </section>
+    
+
+    <section>
+      <h2>Quantity</h2>
+      <div class="quantity-grid">
+        <div>Default</div>
+        <div>Focused</div>
+        <div>Disabled</div>
+        <div><button><i class="icon icon-icon-minus"></i></button><input type="number"><button><i class="icon icon-icon-plus"></i></button></div>
+        <div><button><i class="icon icon-icon-minus"></i></button><input type="number" data-focused><button><i class="icon icon-icon-plus"></i></button></div>
+        <div><button disabled><i class="icon icon-icon-minus"></i></button><input type="number" disabled><button disabled><i class="icon icon-icon-plus"></i></button></div>
       </div>
     </section>
     
@@ -332,20 +346,20 @@
         <div>Focused</div>
         <div>Selected</div>
         <div>Empty</div>
-        <div><button class="chip" data-empty><i>+</i> Status</button></div>
-        <div><button class="chip" data-empty data-hovered><i>+</i> Status</button></div>
-        <div><button class="chip" data-empty data-focused><i>+</i> Status</button></div>
+        <div><button class="chip" data-empty><i class="icon icon-icon-plus"></i> Status</button></div>
+        <div><button class="chip" data-empty data-hovered><i class="icon icon-icon-plus"></i> Status</button></div>
+        <div><button class="chip" data-empty data-focused><i class="icon icon-icon-plus"></i> Status</button></div>
         <div></div>
         <div>Single</div>
-        <div><button class="chip" data-single><i>X</i> example@example.com</button></div>
-        <div><button class="chip" data-single data-hovered><i>X</i> example@example.com</button></div>
-        <div><button class="chip" data-single data-focused><i>X</i> example@example.com</button></div>
+        <div><button class="chip" data-single><i class="icon icon-icon-cross"></i> example@example.com</button></div>
+        <div><button class="chip" data-single data-hovered><i class="icon icon-icon-cross"></i> example@example.com</button></div>
+        <div><button class="chip" data-single data-focused><i class="icon icon-icon-cross"></i> example@example.com</button></div>
         <div></div>
         <div>Multiple</div>
-        <div><button class="chip" data-multiple><i>X</i> Status <span>Succeeded, Refunded</span> <i>V</i></button></div>
-        <div><button class="chip" data-multiple data-hovered><i>X</i> Status <span>Succeeded, Refunded</span> <i>V</i></button></div>
-        <div><button class="chip" data-multiple data-focused><i>X</i> Status <span>Succeeded, Refunded</span> <i>V</i></button></div>
-        <div><button class="chip" data-multiple><i>X</i> Status <span>Succeeded, Refunded</span> <i>V</i></button></div>
+        <div><button class="chip" data-multiple><i class="icon icon-icon-cross"></i> Status | Succeeded, Refunded <i class="icon icon-icon-caret-down"></i></button></div>
+        <div><button class="chip" data-multiple data-hovered><i class="icon icon-icon-cross"></i> Status | Succeeded, Refunded <i class="icon icon-icon-caret-down"></i></button></div>
+        <div><button class="chip" data-multiple data-focused><i class="icon icon-icon-cross"></i> Status | Succeeded, Refunded <i class="icon icon-icon-caret-down"></i></button></div>
+        <div><button class="chip" data-multiple><i class="icon icon-icon-cross"></i> Status | Succeeded, Refunded <i class="icon icon-icon-caret-down"></i></button></div>
       </div>
     </section>
 
@@ -356,8 +370,8 @@
         <div>Positive</div>
         <div>Warning</div>
         <div><div class="toast">1 new message</div></div>
-        <div><div class="toast positive">Report downloaded</div></div>
-        <div><div class="toast warning">Server error</div></div>
+        <div><div class="toast positive"><i class="icon icon-icon-tick"></i>Report downloaded</div></div>
+        <div><div class="toast warning"><i class="icon icon-icon-exclamation"></i>Server error</div></div>
       </div>
     </section>
 
@@ -382,39 +396,39 @@
 
         <div>
           <details>
-            <summary>Title<div class="badge">Badge</div></summary>
+            <summary>Title<div><div class="badge">Badge</div></div></summary>
             Content of the accordion.
           </details>
         </div>
         <div>
           <details open>
-            <summary>Title<div class="badge">Badge</div></summary>
+            <summary>Title<div><div class="badge">Badge</div></div></summary>
             Content of the accordion.
           </details>
         </div>
 
         <div>
           <details>
-            <summary>Title<a href="#">Link</a></summary>
+            <summary>Title<div><a href="#">Link</a></div></summary>
             Content of the accordion.
           </details>
         </div>
         <div>
           <details open>
-            <summary>Title<a href="#">Link</a></summary>
+            <summary>Title<div><a href="#">Link</a></div></summary>
             Content of the accordion.
           </details>
         </div>
 
         <div>
           <details>
-            <summary>Title<button class="secondary">Button</button></summary>
+            <summary>Title<div><button class="secondary small">Button</button></div></summary>
             Content of the accordion.
           </details>
         </div>
         <div>
           <details open>
-            <summary>Title<button class="secondary">Button</button></summary>
+            <summary>Title<div><button class="secondary small">Button</button></div></summary>
             Content of the accordion.
           </details>
         </div>
@@ -437,23 +451,23 @@
         <div>
           <div class="banner">
             <div><div>Banner title</div><div>Banner description goes here.</div><button class="secondary">Button</button></div>
-            <i>x</i>
+            <div><button class="link"><i class="icon icon-icon-cross"></i></button></div>
           </div>
         </div>
         <div class="banner positive">
-          <i>!</i>
+          <i class="icon icon-icon-exclamation"></i>
           <div><div>Banner title</div><div>Banner description goes here.</div><button class="secondary">Button</button></div>
-          <i>x</i>
+          <div><button class="link"><i class="icon icon-icon-cross"></i></button></div>
         </div>
         <div class="banner warning">
-          <i>!</i>
+          <i class="icon icon-icon-exclamation"></i>
           <div><div>Banner title</div><div>Banner description goes here.</div><button class="secondary">Button</button></div>
-          <i>x</i>
+          <div><button class="link"><i class="icon icon-icon-cross"></i></button></div>
         </div>
         <div class="banner negative">
-          <i>!</i>
+          <i class="icon icon-icon-exclamation"></i>
           <div><div>Banner title</div><div>Banner description goes here.</div><button class="secondary">Button</button></div>
-          <i>x</i>
+          <div><button class="link"><i class="icon icon-icon-cross"></i></button></div>
         </div>
       </div>
     </section>
