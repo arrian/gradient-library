@@ -644,6 +644,28 @@
     </section>
     <section>
       <h2>Modal</h2>
+      <div><button class="demo-modal-small-button">Open small modal</button><button class="demo-modal-medium-button">Open medium modal</button><button class="demo-modal-large-button">Open large modal</button></div>
+      
+      <div class="modal small demo-modal-small">
+        <div class="modal-content">
+          <button class="modal-close link demo-modal-close" href="#"><i class="icon icon-icon-cross"></i></button>
+          <h2>Example Small Modal</h2>
+        </div>
+      </div>
+
+      <div class="modal medium demo-modal-medium">
+        <div class="modal-content">
+          <button class="modal-close link demo-modal-close" href="#"><i class="icon icon-icon-cross"></i></button>
+          <h2>Example Medium Modal</h2>
+        </div>
+      </div>
+
+      <div class="modal large demo-modal-large">
+        <div class="modal-content">
+          <button class="modal-close link demo-modal-close" href="#"><i class="icon icon-icon-cross"></i></button>
+          <h2>Example Large Modal</h2>
+        </div>
+      </div>
     </section>
 
 
@@ -661,6 +683,28 @@
           root.setAttribute('class', '');
         }
       })
+    </script>
+
+    <script>
+      const modal = document.querySelector('.demo-modal-small');
+      const modalOpen = document.querySelector('.demo-modal-small-button');
+      const modalClose = document.querySelector('.demo-modal-close');
+
+      modalOpen.addEventListener('click', () => {
+        modal.setAttribute('data-enter', true);
+        setTimeout(() => {
+          modal.setAttribute('data-show', true);
+          modal.removeAttribute('data-enter');
+        }, 200);
+      });
+
+      modalClose.addEventListener('click', () => {
+        modal.removeAttribute('data-show');
+        modal.setAttribute('data-leave', true);
+        setTimeout(() => {
+          modal.removeAttribute('data-leave');
+        }, 200);
+      });
     </script>
   </body>
 </html>
