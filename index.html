@@ -105,7 +105,7 @@
     <section>
       <h2>Buttons</h2>
       <div class="button-grid">
-        <div></div><div>Primary</div><div>icon-right</div><div>Secondary</div><div>icon-right</div><div>Destructive</div><div>icon-right</div>
+        <div></div><div>Primary</div><div>Primary Icon</div><div>Secondary</div><div>Secondary Icon</div><div>Destructive</div><div>Destructive Icon</div>
         <div>Default</div>
           <div><button class="primary">Button</button></div>
           <div><button class="primary"><span>Button</span><i class="icon icon-icon-caret-right"></i></button></div>
@@ -139,22 +139,22 @@
     <section>
       <h2>Links</h2>
       <div class="link-grid">
-        <div></div><div>No icon</div><div>icon-left</div><div>icon-right</div>
-        <div>Primary</div><a class="primary" href="#">Primary Link</a><a class="primary" href="#">Primary Link</a><a class="primary" href="#">Primary Link</a>
-        <div>Secondary</div><a class="secondary" href="#">Secondary Link</a><a class="secondary" href="#">Secondary Link</a><a class="secondary" href="#">Secondary Link</a>
-        <div>Disabled</div><a data-disabled href="#">Disabled Link</a><a data-disabled href="#">Disabled Link</a><a data-disabled href="#">Disabled Link</a>
+        <div></div><div>No icon</div><div>Icon Left</div><div>Icon Right</div>
+        <div>Primary</div><a class="primary" href="#">Primary Link</a><a class="primary" href="#"><i class="icon icon-icon-caret-left"></i> Primary Link</a><a class="primary" href="#">Primary Link <i class="icon icon-icon-caret-right"></i></a>
+        <div>Secondary</div><a class="secondary" href="#">Secondary Link</a><a class="secondary" href="#"><i class="icon icon-icon-tick"></i> Secondary Link</a><a class="secondary" href="#">Secondary Link <i class="icon icon-icon-tick"></i></a>
+        <div>Disabled</div><a data-disabled href="#">Disabled Link</a><a data-disabled href="#"><i class="icon icon-icon-cross"></i> Disabled Link</a><a data-disabled href="#">Disabled Link <i class="icon icon-icon-cross"></i></a>
       </div>
     </section>
     <section>
       <h2>Badges</h2>
       <div class="badge-grid">
-        <div></div><div>No icon</div><div>icon-left</div><div>icon-right</div>
-        <div>Neutral</div><div><div class="badge neutral">Neutral</div></div><div><div class="badge neutral">Neutral</div></div><div><div class="badge neutral">Neutral</div></div>
-        <div>Info</div><div><div class="badge info">Info</div></div><div><div class="badge info">Info</div></div><div><div class="badge info">Info</div></div>
-        <div>Positive</div><div><div class="badge positive">Positive</div></div><div><div class="badge positive">Positive</div></div><div><div class="badge positive">Positive</div></div>
-        <div>Warning</div><div><div class="badge warning">Warning</div></div><div><div class="badge warning">Warning</div></div><div><div class="badge warning">Warning</div></div>
-        <div>Negative</div><div><div class="badge negative">Negative</div></div><div><div class="badge negative">Negative</div></div><div><div class="badge negative">Negative</div></div>
-        <div>Urgent</div><div><div class="badge urgent">Urgent</div></div><div><div class="badge urgent">Urgent</div></div><div><div class="badge urgent">Urgent</div></div>
+        <div></div><div>No icon</div><div>Icon Left</div><div>Icon Right</div>
+        <div>Neutral</div><div><div class="badge neutral">Neutral</div></div><div><div class="badge neutral"><i class="icon icon-icon-tick"></i> Neutral</div></div><div><div class="badge neutral">Neutral <i class="icon icon-icon-tick"></i></div></div>
+        <div>Info</div><div><div class="badge info">Info</div></div><div><div class="badge info"><i class="icon icon-icon-exclamation"></i> Info</div></div><div><div class="badge info">Info <i class="icon icon-icon-exclamation"></i></div></div>
+        <div>Positive</div><div><div class="badge positive">Positive</div></div><div><div class="badge positive"><i class="icon icon-icon-tick"></i> Positive</div></div><div><div class="badge positive">Positive <i class="icon icon-icon-tick"></i></div></div>
+        <div>Warning</div><div><div class="badge warning">Warning</div></div><div><div class="badge warning"><i class="icon icon-icon-exclamation"></i> Warning</div></div><div><div class="badge warning">Warning <i class="icon icon-icon-exclamation"></i></div></div>
+        <div>Negative</div><div><div class="badge negative">Negative</div></div><div><div class="badge negative"><i class="icon icon-icon-cross"></i> Negative</div></div><div><div class="badge negative">Negative <i class="icon icon-icon-cross"></i></div></div>
+        <div>Urgent</div><div><div class="badge urgent">Urgent</div></div><div><div class="badge urgent"><i class="icon icon-icon-exclamation"></i> Urgent</div></div><div><div class="badge urgent">Urgent <i class="icon icon-icon-exclamation"></i></div></div>
       </div>
     </section>
 
@@ -644,25 +644,25 @@
     </section>
     <section>
       <h2>Modal</h2>
-      <div><button class="demo-modal-small-button">Open small modal</button><button class="demo-modal-medium-button">Open medium modal</button><button class="demo-modal-large-button">Open large modal</button></div>
+      <div class="demo-modal-buttons"><button class="demo-modal-small-button">Open small modal</button><button class="demo-modal-medium-button">Open medium modal</button><button class="demo-modal-large-button">Open large modal</button></div>
       
       <div class="modal small demo-modal-small">
         <div class="modal-content">
-          <button class="modal-close link demo-modal-close" href="#"><i class="icon icon-icon-cross"></i></button>
+          <button class="modal-close link demo-modal-small-close" href="#"><i class="icon icon-icon-cross"></i></button>
           <h2>Example Small Modal</h2>
         </div>
       </div>
 
       <div class="modal medium demo-modal-medium">
         <div class="modal-content">
-          <button class="modal-close link demo-modal-close" href="#"><i class="icon icon-icon-cross"></i></button>
+          <button class="modal-close link demo-modal-medium-close" href="#"><i class="icon icon-icon-cross"></i></button>
           <h2>Example Medium Modal</h2>
         </div>
       </div>
 
       <div class="modal large demo-modal-large">
         <div class="modal-content">
-          <button class="modal-close link demo-modal-close" href="#"><i class="icon icon-icon-cross"></i></button>
+          <button class="modal-close link demo-modal-large-close" href="#"><i class="icon icon-icon-cross"></i></button>
           <h2>Example Large Modal</h2>
         </div>
       </div>
@@ -686,25 +686,49 @@
     </script>
 
     <script>
-      const modal = document.querySelector('.demo-modal-small');
-      const modalOpen = document.querySelector('.demo-modal-small-button');
-      const modalClose = document.querySelector('.demo-modal-close');
+      function attachOpen(modal, modalOpen) {
+        modalOpen.addEventListener('click', () => {
+          modal.setAttribute('data-enter', true);
+          setTimeout(() => {
+            modal.setAttribute('data-show', true);
+            modal.removeAttribute('data-enter');
+          }, 200);
+        });
+      }
 
-      modalOpen.addEventListener('click', () => {
-        modal.setAttribute('data-enter', true);
-        setTimeout(() => {
-          modal.setAttribute('data-show', true);
-          modal.removeAttribute('data-enter');
-        }, 200);
+      function attachClose(modal, modalClose) {
+        const closeFn = () => {
+          modal.removeAttribute('data-show');
+          modal.setAttribute('data-leave', true);
+          setTimeout(() => {
+            modal.removeAttribute('data-leave');
+          }, 200);
+        }
+        modalClose.addEventListener('click', closeFn);
+        modal.addEventListener('click', closeFn);
+        modal.querySelector('.modal-content').addEventListener('click', (e) => e.stopPropagation());
+      }
+
+      const selectors = [{
+        modal: 'demo-modal-small',
+        open: 'demo-modal-small-button',
+        close: 'demo-modal-small-close'
+      }, {
+        modal: 'demo-modal-medium',
+        open: 'demo-modal-medium-button',
+        close: 'demo-modal-medium-close'
+      }, {
+        modal: 'demo-modal-large',
+        open: 'demo-modal-large-button',
+        close: 'demo-modal-large-close'
+      }];
+
+      selectors.forEach((selector) => {
+        const modal = document.querySelector('.' + selector.modal);
+        attachOpen(modal, document.querySelector('.' + selector.open));
+        attachClose(modal, document.querySelector('.' + selector.close));
       });
 
-      modalClose.addEventListener('click', () => {
-        modal.removeAttribute('data-show');
-        modal.setAttribute('data-leave', true);
-        setTimeout(() => {
-          modal.removeAttribute('data-leave');
-        }, 200);
-      });
     </script>
   </body>
 </html>

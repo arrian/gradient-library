@@ -152,3 +152,7 @@ section {
 .quantity-grid {
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+.demo-modal-buttons button {
+    margin-right: var(--space-3);
+}

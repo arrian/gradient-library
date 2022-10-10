@@ -81,6 +81,8 @@
   --padding-input: var(--space-3);
   --padding-button: var(--space-3) var(--space-4);
 
+  --icon-inline-scale: 0.8em;
+
   --border-radius-input: 4px;
   --border-radius-button: 4px;
   --border-radius-chip: 12px;
@@ -225,7 +227,6 @@ fieldset input[type="text"]:not(:first-child), fieldset input[type="date"]:not(:
 /* Buttons */
 
 button:not(.chip):not(.link) {
-  margin: 0;
   display: inline-block;
   border-radius: var(--border-radius-button);
   font-family: var(--font-body-family);
@@ -329,6 +330,10 @@ a, a.primary, .link {
   transition: color var(--transition-time) var(--transition-easing);
 }
 
+a i.icon {
+  font-size: var(--icon-inline-scale);
+}
+
 .link { /* Button override */
   background-color: transparent;
   border: none;
@@ -375,6 +380,10 @@ a:disabled, a[data-disabled], .link:disabled, .link[data-disabled] {
   background-color: var(--color-neutral-ultra-light);
   color: var(--color-neutral-ultra-dark);
   border-radius: var(--border-radius-button);
+}
+
+.badge i.icon {
+  font-size: var(--icon-inline-scale);
 }
 
 .badge.info {
@@ -753,6 +762,7 @@ input[type="date"]:disabled {
 
 .chip > i {
   padding-top: 0.5px;
+  font-size: var(--icon-inline-scale);
   margin: 0 var(--space-1);
   font-style: normal;
   border-radius: 50%;
@@ -1017,7 +1027,7 @@ input::-webkit-inner-spin-button {
 }
 
 .modal.medium .modal-content {
-  width: 800px;
+  width: 650px;
 }
 
 .modal.large .modal-content {
