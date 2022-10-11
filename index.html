@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="library-demo.css">
     <link rel="stylesheet" href="icons.css">
   </head>
-  <body>
+  <body class="container">
     <div class="demo-header">
       <h1>Gradient Library</h1>
 
@@ -461,52 +461,52 @@
         <div>Closed</div><div>Open</div>
         
         <div>
-          <details>
+          <details class="accordion">
             <summary>Title</summary>
             Content of the accordion.
           </details>
         </div>
         <div>
-          <details open>
+          <details class="accordion" open>
             <summary>Title</summary>
             Content of the accordion.
           </details>
         </div>
 
         <div>
-          <details>
+          <details class="accordion">
             <summary>Title<div><div class="badge">Badge</div></div></summary>
             Content of the accordion.
           </details>
         </div>
         <div>
-          <details open>
+          <details class="accordion" open>
             <summary>Title<div><div class="badge">Badge</div></div></summary>
             Content of the accordion.
           </details>
         </div>
 
         <div>
-          <details>
+          <details class="accordion">
             <summary>Title<div><a href="#">Link</a></div></summary>
             Content of the accordion.
           </details>
         </div>
         <div>
-          <details open>
+          <details class="accordion" open>
             <summary>Title<div><a href="#">Link</a></div></summary>
             Content of the accordion.
           </details>
         </div>
 
         <div>
-          <details>
+          <details class="accordion">
             <summary>Title<div><button class="secondary small">Button</button></div></summary>
             Content of the accordion.
           </details>
         </div>
         <div>
-          <details open>
+          <details class="accordion" open>
             <summary>Title<div><button class="secondary small">Button</button></div></summary>
             Content of the accordion.
           </details>
@@ -723,7 +723,7 @@
     </section>
     <section>
       <h2>Modal</h2>
-      <div class="demo-modal-buttons"><button class="demo-modal-small-button">Open small modal</button><button class="demo-modal-medium-button">Open medium modal</button><button class="demo-modal-large-button">Open large modal</button></div>
+      <div class="demo-modal-buttons"><button class="demo-modal-small-button">Open small modal</button><button class="demo-modal-medium-button">Open medium modal</button><button class="demo-modal-large-button">Open large modal</button><button class="demo-modal-fullscreen-button">Open fullscreen modal</button></div>
       
       <div class="modal small demo-modal-small">
         <div class="modal-content">
@@ -743,6 +743,15 @@
         <div class="modal-content">
           <h2>Example Large Modal</h2>
           <button class="modal-close link demo-modal-large-close" href="#"><i class="icon icon-cross"></i></button>
+        </div>
+      </div>
+
+      <div class="modal fullscreen demo-modal-fullscreen">
+        <div class="modal-content">
+          <div class="container-relative">
+            <h2>Example Fullscreen Modal</h2>
+            <button class="modal-close link demo-modal-fullscreen-close" href="#"><i class="icon icon-cross"></i></button>
+          </div>
         </div>
       </div>
     </section>
@@ -800,6 +809,10 @@
         modal: 'demo-modal-large',
         open: 'demo-modal-large-button',
         close: 'demo-modal-large-close'
+      }, {
+        modal: 'demo-modal-fullscreen',
+        open: 'demo-modal-fullscreen-button',
+        close: 'demo-modal-fullscreen-close'
       }];
 
       selectors.forEach((selector) => {

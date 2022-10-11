@@ -173,3 +173,7 @@ section {
 .icons-container > div > div {
     margin-top: var(--space-3);
 }
+
+.demo-modal-fullscreen-close {
+    font-size: var(--font-size-24);
+}
