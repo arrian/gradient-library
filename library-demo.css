@@ -156,3 +156,20 @@ section {
 .demo-modal-buttons button {
     margin-right: var(--space-3);
 }
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.icons-container > div {
+    margin-top: var(--space-10);
+    margin-right: var(--space-3);
+    flex: 0 0 100px;
+    text-align: center;
+}
+
+.icons-container > div > div {
+    margin-top: var(--space-3);
+}

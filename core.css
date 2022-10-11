@@ -161,6 +161,15 @@ body {
 }
 
 /* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-light);
+  letter-spacing: var(--letter-spacing);
+}
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0;
+}
+
 .bold {
   font-weight: var(--font-weight-bold);
 }
@@ -302,22 +311,22 @@ button i {
   transition: transform var(--transition-time) var(--transition-easing), opacity var(--transition-time) var(--transition-easing);
 }
 
-button:active:not(:disabled) i.icon-icon-caret-right {
+button:active:not(:disabled) i.icon-caret-right {
   transform: translate(5px, 0);
   opacity: 30%;
 }
 
-button:active:not(:disabled) i.icon-icon-tick, button:active:not(:disabled) i.icon-icon-caret-up {
+button:active:not(:disabled) i.icon-tick, button:active:not(:disabled) i.icon-caret-up {
   transform: translate(0, -5px);
   opacity: 30%;
 }
 
-button:active:not(:disabled) i.icon-icon-cross, button:active:not(:disabled) i.icon-icon-minus {
+button:active:not(:disabled) i.icon-cross, button:active:not(:disabled) i.icon-minus {
   transform: scale(0.5);
   opacity: 30%;
 }
 
-button:active:not(:disabled) i.icon-icon-plus {
+button:active:not(:disabled) i.icon-plus {
   transform: scale(1.25);
   opacity: 30%;
 }
@@ -1024,14 +1033,17 @@ input::-webkit-inner-spin-button {
 
 .modal.small .modal-content {
   width: 400px;
+  min-height: 200px;
 }
 
 .modal.medium .modal-content {
   width: 650px;
+  min-height: 300px;
 }
 
 .modal.large .modal-content {
   width: 1000px;
+  min-height: 400px;
 }
 
 .modal-close {
@@ -1065,6 +1077,15 @@ input::-webkit-inner-spin-button {
   animation-name: enterTranslate;
 }
 
+/* Ratings */
+
+.stars {
+
+}
+
+.hearts {
+  
+}
 
 /* Effects */
 
