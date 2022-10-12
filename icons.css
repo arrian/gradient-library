@@ -25,6 +25,87 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-image:before {
+  content: "\e92d";
+}
+.icon-volume-low:before {
+  content: "\e913";
+}
+.icon-volume-mute:before {
+  content: "\e914";
+}
+.icon-volume-off:before {
+  content: "\e915";
+}
+.icon-volume-high:before {
+  content: "\e916";
+}
+.icon-pause:before {
+  content: "\e917";
+}
+.icon-stop:before {
+  content: "\e918";
+}
+.icon-play:before {
+  content: "\e919";
+}
+.icon-truck:before {
+  content: "\e91a";
+}
+.icon-thumbs-down:before {
+  content: "\e91b";
+}
+.icon-thumbs-up:before {
+  content: "\e91c";
+}
+.icon-share:before {
+  content: "\e91d";
+}
+.icon-video:before {
+  content: "\e91e";
+}
+.icon-tag-outline:before {
+  content: "\e91f";
+}
+.icon-tag:before {
+  content: "\e920";
+}
+.icon-trash:before {
+  content: "\e921";
+}
+.icon-gear:before {
+  content: "\e922";
+}
+.icon-comment:before {
+  content: "\e923";
+}
+.icon-bag:before {
+  content: "\e924";
+}
+.icon-bookmark-outline:before {
+  content: "\e925";
+}
+.icon-bookmark:before {
+  content: "\e926";
+}
+.icon-arrow-down:before {
+  content: "\e927";
+}
+.icon-arrow-up:before {
+  content: "\e928";
+}
+.icon-arrow-left:before {
+  content: "\e929";
+}
+.icon-arrow-right:before {
+  content: "\e92a";
+}
+.icon-menu:before {
+  content: "\e92b";
+}
+.icon-phone:before {
+  content: "\e92c";
+}
 .icon-info:before {
   content: "\e900";
 }

@@ -81,8 +81,6 @@
   --padding-input: var(--space-3);
   --padding-button: var(--space-3) var(--space-4);
 
-  --icon-inline-scale: 0.8em;
-
   --border-radius-input: 4px;
   --border-radius-button: 4px;
   --border-radius-chip: 12px;
@@ -188,7 +186,6 @@ ul {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: var(--font-weight-light);
   letter-spacing: var(--letter-spacing);
 }
 
@@ -202,6 +199,18 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, 
 
 .light {
   font-weight: var(--font-weight-light);
+}
+
+.text.neutral {
+  color: var(--color-neutral-medium);
+}
+
+.text.positive {
+  color: var(--color-positive-medium);
+}
+
+.text.negative {
+  color: var(--color-negative-medium);
 }
 
 /* Forms / Fields / Labels */
@@ -347,7 +356,7 @@ button:active:not(:disabled) i.icon-tick, button:active:not(:disabled) i.icon-ca
   opacity: 30%;
 }
 
-button:active:not(:disabled) i.icon-cross, button:active:not(:disabled) i.icon-minus {
+button:active:not(:disabled) i.icon-cross, button:active:not(:disabled) i.icon-minus, button:active:not(:disabled) i.icon-trash {
   transform: scale(0.5);
   opacity: 30%;
 }
@@ -363,10 +372,6 @@ a, a.primary, .link {
   border-radius: var(--border-radius-button);
   color: var(--button-primary-color);
   transition: color var(--transition-time) var(--transition-easing);
-}
-
-a i.icon {
-  font-size: var(--icon-inline-scale);
 }
 
 .link { /* Button override */
@@ -412,17 +417,15 @@ a:disabled, a[data-disabled], .link:disabled, .link[data-disabled] {
 
 .badge, .badge.neutral {
   line-height: 1.3rem;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: 0 var(--space-2);
   margin: 0;
   font-size: var(--font-size-14);
   background-color: var(--color-neutral-ultra-light);
   color: var(--color-neutral-ultra-dark);
   border-radius: var(--border-radius-button);
-}
-
-.badge i.icon {
-  font-size: var(--icon-inline-scale);
+  white-space: pre-wrap;
 }
 
 .badge.info {
@@ -800,12 +803,9 @@ input[type="date"]:disabled {
 
 .chip > i {
   padding-top: 0.5px;
-  font-size: var(--icon-inline-scale);
   margin: 0 var(--space-1);
   font-style: normal;
   border-radius: 50%;
-  width: var(--space-3);
-  height: var(--space-3);
 }
 
 .chip > span {
