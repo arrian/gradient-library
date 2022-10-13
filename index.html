@@ -913,21 +913,21 @@
     <script>
       function attachOpen(modal, modalOpen) {
         modalOpen.addEventListener('click', () => {
-          modal.setAttribute('data-enter', true);
-          setTimeout(() => {
+          // modal.setAttribute('data-enter', true);
+          // setTimeout(() => {
             modal.setAttribute('data-show', true);
-            modal.removeAttribute('data-enter');
-          }, 200);
+            // modal.removeAttribute('data-enter');
+          // }, 200);
         });
       }
 
       function attachClose(modal, modalClose) {
         const closeFn = () => {
           modal.removeAttribute('data-show');
-          modal.setAttribute('data-leave', true);
-          setTimeout(() => {
-            modal.removeAttribute('data-leave');
-          }, 200);
+          // modal.setAttribute('data-leave', true);
+          // setTimeout(() => {
+            // modal.removeAttribute('data-leave');
+          // }, 200);
         }
         modalClose.addEventListener('click', closeFn);
         modal.addEventListener('click', closeFn);
