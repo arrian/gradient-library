@@ -153,6 +153,10 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.demo-drawer-buttons button {
+    margin-right: var(--space-3);
+}
+
 .demo-modal-buttons button {
     margin-right: var(--space-3);
 }
