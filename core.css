@@ -281,6 +281,7 @@ fieldset input[type="text"]:not(:first-child), fieldset input[type="date"]:not(:
 button {
   display: inline-flex;
   align-items: center;
+  gap: var(--space-2);
   border-radius: var(--border-radius-button);
   font-family: var(--font-body-family);
   font-weight: var(--font-weight-bold);
@@ -292,10 +293,6 @@ button {
   background-color: var(--button-primary-color);
   border: 1px solid var(--button-primary-color);
   color: var(--font-inverted-color);
-}
-
-button i:last-child:not(:first-child) {
-  margin-left: var(--space-3);
 }
 
 button:focus, button[data-focused] {
@@ -431,13 +428,13 @@ a:disabled, a[data-disabled], button.tertiary:disabled, button.tertiary[data-dis
   line-height: 1.3rem;
   display: inline-flex;
   align-items: center;
+  gap: var(--space-1);
   padding: 0 var(--space-2);
   margin: 0;
   font-size: var(--font-size-14);
   background-color: var(--color-neutral-ultra-light);
   color: var(--color-neutral-ultra-dark);
   border-radius: var(--border-radius-button);
-  white-space: pre-wrap;
 }
 
 .badge.info {
@@ -798,6 +795,7 @@ input[type="date"]:disabled {
 .chip {
   display: flex;
   align-items: center;
+  gap: var(--space-2);
   flex-wrap: nowrap;
   position: relative;
   background-color: var(--color-neutral-ultra-light);
@@ -811,7 +809,7 @@ input[type="date"]:disabled {
   letter-spacing: var(--letter-spacing);
   font-weight: var(--font-weight);
   outline: var(--focus-outline-hidden);
-  padding: var(--space-1);
+  padding: var(--space-1) var(--space-3);
 }
 
 .chip[data-empty] {
@@ -820,9 +818,7 @@ input[type="date"]:disabled {
 
 .chip > i {
   padding-top: 0.5px;
-  margin: 0 var(--space-1);
   font-style: normal;
-  border-radius: 50%;
 }
 
 .chip > span {
@@ -856,12 +852,9 @@ input[type="date"]:disabled {
   border-radius: var(--border-radius-container);
   display: inline-flex;
   align-items: center;
+  gap: var(--space-2);
   box-shadow: var(--box-shadow);
   font-size: var(--font-size-14);
-}
-
-.toast > i {
-  margin-right: var(--space-3);
 }
 
 .toast.positive > i {
