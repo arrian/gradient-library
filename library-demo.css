@@ -4,7 +4,6 @@ body {
     transition: background-color var(--transition-time) var(--transition-easing);
 }
 
-
 .dark-mode {
     --color-neutral-ultra-light: #0d1919;
     --color-neutral-light: #223232;
@@ -41,7 +40,7 @@ body {
     --color-neutral-medium: #456060;
     --color-neutral-dark: #6a8c8c;
     --color-neutral-ultra-dark: #daeded;
-    --color-neutral: #011213; 
+    --color-neutral: #000000; 
 
     --color-accent-light: #194f08;
     --color-accent-medium: #278b08;
@@ -110,9 +109,6 @@ body {
     --background-color-2: var(--color-neutral);
     --border-color: var(--color-neutral-ultra-light);
 }
-
-
-
 
 
 section {

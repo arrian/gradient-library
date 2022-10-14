@@ -9,15 +9,15 @@
   <body class="container">
     <div class="demo-header">
       <h1>Gradient Library</h1>
-
-      <fieldset>
-        <label>
-          <input type="checkbox" class="dark-mode-toggle switch">
-          <div>
-            Dark mode
-          </div>
-        </label>
-      </fieldset>
+      
+      <div>
+        <select class="theme-toggle">
+          <option value="light-mode">Light theme</option>
+          <option value="dark-mode">Dark theme</option>
+          <option value="pastel-mode">Pastel theme</option>
+          <option value="terminal-mode">Terminal theme</option>
+        </select>
+      </div>
     </div>
 
 
@@ -111,13 +111,10 @@
       <h2>Icons</h2>
       <div class="icons-container">
         <div>
-          <i class="icon icon-info"></i>
-          <div>info</div>
+          <i class="icon icon-menu"></i>
+          <div>menu</div>
         </div>
-        <div>
-          <i class="icon icon-circle-exclamation"></i>
-          <div>circle-exclamation</div>
-        </div>
+        
         <div>
           <i class="icon icon-heart-outline"></i>
           <div>heart-outline</div>
@@ -129,6 +126,10 @@
         <div>
           <i class="icon icon-location"></i>
           <div>location</div>
+        </div>
+        <div>
+          <i class="icon icon-position"></i>
+          <div>position</div>
         </div>
         <div>
           <i class="icon icon-star-outline"></i>
@@ -143,8 +144,16 @@
           <div>user</div>
         </div>
         <div>
+          <i class="icon icon-user-circle"></i>
+          <div>user-circle</div>
+        </div>
+        <div>
           <i class="icon icon-magnifier"></i>
           <div>magnifier</div>
+        </div>
+        <div>
+          <i class="icon icon-plus"></i>
+          <div>plus</div>
         </div>
         <div>
           <i class="icon icon-minus"></i>
@@ -155,6 +164,10 @@
           <div>caret-up</div>
         </div>
         <div>
+          <i class="icon icon-caret-down"></i>
+          <div>caret-down</div>
+        </div>
+        <div>
           <i class="icon icon-caret-left"></i>
           <div>caret-left</div>
         </div>
@@ -163,21 +176,23 @@
           <div>caret-right</div>
         </div>
         <div>
+          <i class="icon icon-info"></i>
+          <div>info</div>
+        </div>
+        <div>
+          <i class="icon icon-circle-exclamation"></i>
+          <div>circle-exclamation</div>
+        </div>
+        <div>
           <i class="icon icon-exclamation"></i>
           <div>exclamation</div>
         </div>
-        <div>
-          <i class="icon icon-plus"></i>
-          <div>plus</div>
-        </div>
+
         <div>
           <i class="icon icon-tick"></i>
           <div>tick</div>
         </div>
-        <div>
-          <i class="icon icon-caret-down"></i>
-          <div>caret-down</div>
-        </div>
+
         <div>
           <i class="icon icon-cross"></i>
           <div>cross</div>
@@ -251,6 +266,10 @@
           <div>comment</div>
         </div>
         <div>
+          <i class="icon icon-comment-outline"></i>
+          <div>comment-outline</div>
+        </div>
+        <div>
           <i class="icon icon-bag"></i>
           <div>bag</div>
         </div>
@@ -263,12 +282,12 @@
           <div>bookmark</div>
         </div>
         <div>
-          <i class="icon icon-arrow-down"></i>
-          <div>arrow-down</div>
-        </div>
-        <div>
           <i class="icon icon-arrow-up"></i>
           <div>arrow-up</div>
+        </div>
+        <div>
+          <i class="icon icon-arrow-down"></i>
+          <div>arrow-down</div>
         </div>
         <div>
           <i class="icon icon-arrow-left"></i>
@@ -279,10 +298,6 @@
           <div>arrow-right</div>
         </div>
         <div>
-          <i class="icon icon-menu"></i>
-          <div>menu</div>
-        </div>
-        <div>
           <i class="icon icon-phone"></i>
           <div>phone</div>
         </div>
@@ -290,7 +305,87 @@
           <i class="icon icon-image"></i>
           <div>image</div>
         </div>
+
+
+
+        <div>
+          <i class="icon icon-facebook"></i>
+          <div>facebook</div>
+        </div>
+        <div>
+          <i class="icon icon-instagram"></i>
+          <div>instagram</div>
+        </div>
+        <div>
+          <i class="icon icon-pinterest"></i>
+          <div>pinterest</div>
+        </div>
+        <div>
+          <i class="icon icon-snapchat"></i>
+          <div>snapchat</div>
+        </div>
+        <div>
+          <i class="icon icon-tiktok"></i>
+          <div>tiktok</div>
+        </div>
+        <div>
+          <i class="icon icon-tumblr"></i>
+          <div>tumblr</div>
+        </div>
+        <div>
+          <i class="icon icon-twitter"></i>
+          <div>twitter</div>
+        </div>
+        <div>
+          <i class="icon icon-vimeo"></i>
+          <div>vimeo</div>
+        </div>
+        <div>
+          <i class="icon icon-youtube"></i>
+          <div>youtube</div>
+        </div>
       </div>
+
+
+
+
+
+<!-- .icon-comment-outline:before {
+  content: "\e92e";
+}
+.icon-facebook:before {
+  content: "\e92f";
+}
+.icon-instagram:before {
+  content: "\e930";
+}
+.icon-pinterest:before {
+  content: "\e931";
+}
+.icon-position:before {
+  content: "\e932";
+}
+.icon-snapchat:before {
+  content: "\e933";
+}
+.icon-tiktok:before {
+  content: "\e934";
+}
+.icon-tumblr:before {
+  content: "\e935";
+}
+.icon-twitter:before {
+  content: "\e936";
+}
+.icon-user-circle:before {
+  content: "\e937";
+}
+.icon-vimeo:before {
+  content: "\e938";
+}
+.icon-youtube:before {
+  content: "\e939";
+} -->
     </section>
 
     <section>
@@ -667,33 +762,39 @@
     <section>
       <h2>Menus</h2>
       <div class="menu-grid">
-        <menu>
-          <li>Available action 1</li>
-          <li>Available action 2</li>
-          <li>Available action 3</li>
-          <li>Available action 4</li>
-          <li>Available action 5</li>
-        </menu>
-        <menu>
-          <li>Available action 1</li>
-          <li>Available action 2</li>
-          <li>Available action 3</li>
-          <hr />
-          <li>Available action 4</li>
-          <li>Available action 5</li>
-          <li>Available action 6</li>
-        </menu>
-        <menu>
-          <span>Section</span>
-          <li>Available action 1</li>
-          <li>Available action 2</li>
-          <li>Available action 3</li>
-          <hr />
-          <span>Section 2</span>
-          <li>Available action 4</li>
-          <li>Available action 5</li>
-          <li>Available action 6</li>
-        </menu>
+        <div>
+          <menu class="list">
+            <li><button class="link">Available action 1</button></li>
+            <li><button class="link">Available action 2</button></li>
+            <li><button class="link">Available action 3</button></li>
+            <li><button class="link">Available action 4</button></li>
+            <li><button class="link">Available action 5</button></li>
+          </menu>
+        </div>
+        <div>
+          <menu class="list">
+            <li><button class="link">Available action 1</button></li>
+            <li><button class="link">Available action 2</button></li>
+            <li><button class="link">Available action 3</button></li>
+            <hr />
+            <li><button class="link">Available action 4</button></li>
+            <li><button class="link">Available action 5</button></li>
+            <li><button class="link">Available action 6</button></li>
+          </menu>
+        </div>
+        <div>
+          <menu class="list">
+            <div>Section</div>
+            <li><button class="link">Available action 1</button></li>
+            <li><button class="link">Available action 2</button></li>
+            <li><button class="link">Available action 3</button></li>
+            <hr />
+            <div>Section 2</div>
+            <li><button class="link">Available action 4</button></li>
+            <li><button class="link">Available action 5</button></li>
+            <li><button class="link">Available action 6</button></li>
+          </menu>
+        </div>
       </div>
     </section>
 
@@ -897,37 +998,23 @@
     <script src="/reload/reload.js"></script>
 
     <script>
-      const darkModeCheckbox = document.querySelector('.dark-mode-toggle');
-
-      darkModeCheckbox.addEventListener('change', (event) => {
+      const themeToggle = document.querySelector('.theme-toggle');
+      themeToggle.addEventListener('change', (event) => {
         let root = document.getElementsByTagName('html')[0];
-
-        if (event.currentTarget.checked) {
-          root.setAttribute('class', 'dark-mode');
-        } else {
-          root.setAttribute('class', '');
-        }
-      })
+        root.setAttribute('class', themeToggle.value);
+      });
     </script>
 
     <script>
       function attachOpen(modal, modalOpen) {
         modalOpen.addEventListener('click', () => {
-          // modal.setAttribute('data-enter', true);
-          // setTimeout(() => {
-            modal.setAttribute('data-show', true);
-            // modal.removeAttribute('data-enter');
-          // }, 200);
+          modal.setAttribute('data-show', true);
         });
       }
 
       function attachClose(modal, modalClose) {
         const closeFn = () => {
           modal.removeAttribute('data-show');
-          // modal.setAttribute('data-leave', true);
-          // setTimeout(() => {
-            // modal.removeAttribute('data-leave');
-          // }, 200);
         }
         modalClose.addEventListener('click', closeFn);
         modal.addEventListener('click', closeFn);
