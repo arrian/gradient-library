@@ -1,7 +1,6 @@
 body {
     background-color: var(--background-color-2);
     margin: var(--space-4);
-    transition: background-color var(--transition-time) var(--transition-easing);
 }
 
 .dark-mode {
@@ -59,6 +58,7 @@ body {
     --color-negative-dark: #f0714b;
 
     --color-overlay: rgba(112, 237, 74, 0.4);
+    --color-shadow: rgba(112, 237, 74, 0.1);
 
     --button-primary-color: var(--color-accent-medium);
     --button-primary-hover-color: var(--color-accent-dark);
