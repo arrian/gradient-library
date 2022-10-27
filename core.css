@@ -548,7 +548,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sea
 
 input[type="text"].small, input[type="email"].small, input[type="password"].small, input[type="search"].small, input[type="number"].small {
   font-size: var(--font-size-12);
-  padding: var(--space-2) var(--space-3);
+  padding: var(--space-1) var(--space-2);
 }
 
 input[type="text"].large, input[type="email"].large, input[type="password"].large, input[type="search"].large, input[type="number"].large {
@@ -1147,7 +1147,7 @@ input::-webkit-inner-spin-button {
 
 /* Modals */
 
-.modal {
+.modal, dialog::backdrop {
   position: fixed;
   background-color: var(--color-overlay);
   width: 100vw;
@@ -1165,21 +1165,21 @@ input::-webkit-inner-spin-button {
   transition: opacity var(--transition-time) var(--transition-easing), visibility var(--transition-time) var(--transition-easing);
 }
 
-.modal[data-show] {
+.modal[data-show], dialog[open] {
   visibility: visible;
   opacity: 1;
 }
 
-.modal .modal-content {
+.modal .modal-content, dialog {
   transform: scale(0.5);
   transition: transform var(--transition-time) var(--transition-easing);
 }
 
-.modal[data-show] .modal-content {
+.modal[data-show] .modal-content, dialog[open] {
   transform: none;
 }
 
-.modal-content {
+.modal-content, dialog {
   position: relative;
   width: 100%;
   background-color: var(--background-color);
@@ -1187,27 +1187,27 @@ input::-webkit-inner-spin-button {
   box-shadow: var(--box-shadow);
 }
 
-.modal.small .modal-content {
+.modal.small .modal-content, dialog.small {
   width: 400px;
   min-height: 200px;
 }
 
-.modal.medium .modal-content {
+.modal.medium .modal-content, dialog.medium {
   width: 650px;
   min-height: 300px;
 }
 
-.modal.large .modal-content {
+.modal.large .modal-content, dialog.large {
   width: 1000px;
   min-height: 400px;
 }
 
-.modal.fullscreen .modal-content {
+.modal.fullscreen .modal-content, dialog.fullscreen {
   width: 100vw;
   height: 100vh;
 }
 
-.modal-close {
+.modal-close, .dialog-close {
   margin: var(--space-4);
   position: absolute;
   right: 0;
