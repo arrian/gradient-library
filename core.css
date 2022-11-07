@@ -884,7 +884,7 @@ input[type="date"]:disabled {
   letter-spacing: var(--letter-spacing);
   font-weight: var(--font-weight);
   outline: var(--focus-outline-hidden);
-  padding: var(--space-1) var(--space-3);
+  padding: var(--space-1) var(--space-7) var(--space-1) var(--space-3);
   min-height: auto;
 }
 
@@ -916,6 +916,10 @@ input[type="date"]:disabled {
   background-color: var(--color-neutral-light);
   border: 1px solid var(--color-neutral-light);
   box-shadow: none;
+}
+
+select.chip {
+  cursor: pointer;
 }
 
 
