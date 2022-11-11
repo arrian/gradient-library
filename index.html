@@ -11,12 +11,14 @@
       <h1>Gradient Library</h1>
       
       <div>
-        <select class="theme-toggle">
-          <option value="light-mode">Light theme</option>
-          <option value="dark-mode">Dark theme</option>
-          <option value="pastel-mode">Pastel theme</option>
-          <option value="terminal-mode">Terminal theme</option>
-        </select>
+        <div class="select">
+          <select class="theme-toggle">
+            <option value="light-mode">Light theme</option>
+            <option value="dark-mode">Dark theme</option>
+            <option value="pastel-mode">Pastel theme</option>
+            <option value="terminal-mode">Terminal theme</option>
+          </select>
+        </div>
       </div>
     </div>
 
@@ -356,6 +358,10 @@
           <i class="icon icon-linkedin"></i>
           <div>linkedin</div>
         </div>
+        <div>
+          <i class="icon icon-filter"></i>
+          <div>filter</div>
+        </div>
       </div>
     </section>
 
@@ -508,20 +514,20 @@
         <div>Error</div>
         <div>Disabled</div>
         <div>Medium</div>
-        <fieldset><label><div>Label<span class="description">Description</span><select><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><select data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><select data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select><div class="error"><i class="icon icon-circle-exclamation"></i>Error message</div></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><select disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><div class="select"><select><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><div class="select"><select data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><div class="select"><select data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div><div class="error"><i class="icon icon-circle-exclamation"></i>Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><div class="select"><select disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></div></label></fieldset>
         <div>Small</div>
-        <fieldset><label><div>Label<span class="description">Description</span><select class="small"><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><select class="small" data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><select class="small" data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select><div class="error"><i class="icon icon-circle-exclamation"></i>Error message</div></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><select class="small" disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><div class="select small"><select><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><div class="select small"><select data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><div class="select small"><select data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div><div class="error"><i class="icon icon-circle-exclamation"></i>Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><div class="select small"><select disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></div></label></fieldset>
         <div>Large</div>
-        <fieldset><label><div>Label<span class="description">Description</span><select class="large"><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><select class="large" data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><select class="large" data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select><div class="error"><i class="icon icon-circle-exclamation"></i>Error message</div></div></label></fieldset>
-        <fieldset><label><div>Label<span class="description">Description</span><select class="large" disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><div class="select large"><select><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><div class="select large"><select data-focused><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><div class="select large"><select data-invalid><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div><div class="error"><i class="icon icon-circle-exclamation"></i>Error message</div></div></label></fieldset>
+        <fieldset><label><div>Label<span class="description">Description</span><div class="select large"><select disabled><option selected disabled hidden>Choose one</option><option>Option 1</option><option>Option 2</option></select></div></div></label></fieldset>
       </div>
     </section>
 
@@ -614,7 +620,14 @@
         <div><button class="chip" data-single data-focused><i class="icon icon-cross"></i> example@example.com</button></div>
         <div></div>
         <div>Multiple</div>
-        <div><button class="chip" data-multiple><i class="icon icon-cross"></i> Status | Succeeded, Refunded <i class="icon icon-caret-down"></i></button></div>
+        <div>
+          <button class="chip" data-multiple><i class="icon icon-cross"></i> Status | Succeeded, Refunded <i class="icon icon-caret-down"></i></button>
+          <!-- <select class="chip" data-multiple>
+            <option value="">Australia ($)</option>
+            <option value="">Canada ($)</option>
+            <option value="">United States ($)</option>
+          </select> -->
+        </div>
         <div><button class="chip" data-multiple data-hovered><i class="icon icon-cross"></i> Status | Succeeded, Refunded <i class="icon icon-caret-down"></i></button></div>
         <div><button class="chip" data-multiple data-focused><i class="icon icon-cross"></i> Status | Succeeded, Refunded <i class="icon icon-caret-down"></i></button></div>
         <div><button class="chip" data-multiple><i class="icon icon-cross"></i> Status | Succeeded, Refunded <i class="icon icon-caret-down"></i></button></div>

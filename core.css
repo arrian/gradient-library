@@ -87,6 +87,9 @@
   --border-radius-container: 8px;
   --border-radius-circle: 50%;
 
+  --border-width-thin: 1px;
+  --border-width-thick: 3px;
+
   --box-shadow: 1px 2px 6px 2px var(--color-shadow);
 
   --page-padding: var(--space-4);
@@ -201,6 +204,12 @@ ul {
   word-wrap: normal !important;
 }
 
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: var(--font-heading-family);
@@ -289,7 +298,7 @@ fieldset > label .error {
   margin-top: var(--space-1);
 }
 
-fieldset input[type="text"]:not(:first-child), fieldset input[type="date"]:not(:first-child), fieldset textarea:not(:first-child), fieldset select:not(:first-child) {
+fieldset input[type="text"]:not(:first-child), fieldset input[type="date"]:not(:first-child), fieldset textarea:not(:first-child), fieldset select:not(:first-child), fieldset .select:not(:first-child) {
   margin-top: var(--space-2);
 }
 
@@ -609,9 +618,9 @@ input[type="number"]:focus, input[type="number"][data-focused], input[type="tel"
   outline: var(--focus-outline);
 }
 
-input[type="text"]:invalid, input[type="text"][data-invalid], input[type="email"]:invalid, input[type="email"][data-invalid],
-input[type="password"]:invalid, input[type="password"][data-invalid], input[type="search"]:invalid, input[type="search"][data-invalid],
-input[type="number"]:invalid, input[type="number"][data-invalid] {
+input[type="text"]:invalid:not(:placeholder-shown):not(:focus), input[type="text"][data-invalid], input[type="email"]:invalid:not(:placeholder-shown):not(:focus), input[type="email"][data-invalid],
+input[type="password"]:invalid:not(:placeholder-shown):not(:focus), input[type="password"][data-invalid], input[type="search"]:invalid:not(:placeholder-shown):not(:focus), input[type="search"][data-invalid],
+input[type="number"]:invalid:not(:placeholder-shown):not(:focus), input[type="number"][data-invalid] {
   border: 1px solid var(--color-negative-medium);
 }
 
@@ -664,34 +673,93 @@ textarea:disabled {
 
 /* Selects */
 
-select {
+.select {
   position: relative;
-  padding: var(--space-2) var(--space-9) var(--space-2) var(--space-3);
+  padding: 0;
   margin: 0;
   letter-spacing: var(--letter-spacing);
   border-radius: var(--border-radius-input);
   border: 1px solid var(--border-color);
   outline: var(--focus-outline-hidden);
-  transition: outline var(--transition-time) var(--transition-easing);
-  appearance: none;
-  background-image: var(--icon-caret-down);
-  background-repeat: no-repeat;
-  background-size: 1em 1em;
-  background-position: calc(100% - var(--space-3)) center;
-  background-clip: border-box;
+  transition: outline var(--transition-time) var(--transition-easing), background-color var(--transition-time) var(--transition-easing);
   box-shadow: var(--box-shadow);
   background-color: var(--background-color);
   color: var(--font-color);
   width: 100%;
+  cursor: pointer;
 }
 
-select.small {
+.select:after {
+  content: "\e911";
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  position: absolute;
+  right: var(--space-2);
+  top: 0;
+  bottom: 0;
+  align-items: center;
+  pointer-events: none;
+}
+
+.select:not(.chip) {
+
+}
+
+.select.chip {
+  background-color: var(--color-neutral-ultra-light);
+  border: 1px solid var(--color-neutral-light);
+  color: var(--font-color);
+  text-align: left;
+  border-radius: var(--border-radius-chip);
+  box-shadow: none;
+  white-space: nowrap;
+  letter-spacing: var(--letter-spacing);
+  font-weight: var(--font-weight);
+  outline: var(--focus-outline-hidden);
+  min-height: auto;
+}
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  border-radius: var(--border-radius-input);
+  padding: var(--space-2) var(--space-9) var(--space-2) var(--space-3);
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+
+.select.chip select {
+  padding: var(--space-1) var(--space-7) var(--space-1) var(--space-3);
+  border-radius: var(--border-radius-chip);
+}
+
+
+.select.small {
   font-size: var(--font-size-12);
+}
+
+.select.small:not(.chip) > select {
   padding: var(--space-2) var(--space-9) var(--space-2) var(--space-3);
 }
 
-select.large {
+.select.large:not(.chip) {
   font-size: var(--font-size-16);
+}
+
+.select.large:not(.chip) > select {
   padding: var(--space-2) var(--space-9) var(--space-2) var(--space-3);
 }
 
@@ -699,11 +767,11 @@ select:focus, select[data-focused] {
   outline: var(--focus-outline);
 }
 
-select:invalid, select[data-invalid] {
-  border: 1px solid var(--color-negative-medium);
+select:invalid:not(:focus), select[data-invalid]:not(:focus) {
+  outline: 1px solid var(--color-negative-medium);
 }
 
-select:disabled {
+.select:disabled, select:disabled {
   opacity: var(--disabled-opacity);
   background-color: var(--color-neutral-ultra-light);
 }
@@ -874,7 +942,7 @@ input[type="date"]:disabled {
   flex-wrap: nowrap;
   position: relative;
   background-color: var(--color-neutral-ultra-light);
-  border: 1px solid var(--color-neutral-ultra-light);
+  border: 1px solid var(--color-neutral-light);
   color: var(--font-color);
   text-align: left;
   border-radius: var(--border-radius-chip);
@@ -1037,7 +1105,6 @@ details.accordion > summary, .accordion-link {
   align-items: center;
   transition: background-color var(--transition-time) var(--transition-easing);
   border-radius: 0;
-  background-color: var(--background-color);
   color: var(--font-color);
 }
 
@@ -1111,9 +1178,10 @@ menu.list {
   border-radius: var(--border-radius-container);
   list-style: none;
   display: inline-block;
+  overflow: hidden;
 }
 
-menu.list > div, menu.list > span, menu.list > h1, menu.list > h2, menu.list > h3, menu.list > h4 {
+menu.list > h1, menu.list > h2, menu.list > h3, menu.list > h4 {
   margin: var(--space-5) var(--space-8) var(--space-3) var(--space-8);
   text-transform: uppercase;
   font-size: var(--font-size-12);
