@@ -280,6 +280,9 @@ fieldset {
 
 fieldset > label {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-14);
   user-select: none;
@@ -600,6 +603,11 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sea
   box-shadow: var(--box-shadow);
   background-color: var(--background-color);
   color: var(--font-color);
+}
+
+input::placeholder {
+  font-weight: var(--font-weight);
+  font-family: var(--font-body-family);
 }
 
 input[type="text"].small, input[type="email"].small, input[type="password"].small, input[type="search"].small, input[type="number"].small, input[type="tel"].small {
@@ -1367,16 +1375,6 @@ input::-webkit-inner-spin-button {
   top: 0;
 }
 
-/* Ratings */
-
-.stars {
-
-}
-
-.hearts {
-  
-}
-
 /* Effects */
 
 @keyframes spinner {
@@ -1430,5 +1428,42 @@ input::-webkit-inner-spin-button {
   }
 }
 
+/*
+Breakpoints:
+- mobile: 0 - 749
+- table: 750 - 989
+- desktop: 990 - 1199
+- large-desktop: 1200 - 1439
+- xlarge-desktop: 1440 - 1919
+- xxlarge-desktop: 1920+
+*/
 
+@media screen and (max-width: 749px) {
+  .tablet-only, .desktop-only, .large-desktop-only, .xlarge-desktop-only, .xxlarge-desktop-only,
+  .tablet-up, .desktop-up, .large-desktop-up, .xlarge-desktop-up, .xxlarge-desktop-up { display: none !important; }
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .mobile-only, .desktop-only, .large-desktop-only, .xlarge-desktop-only, .xxlarge-desktop-only, 
+  .desktop-up, .large-desktop-up, .xlarge-desktop-up, .xxlarge-desktop-up { display: none !important; }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1199px) {
+  .mobile-only, .tablet-only, .large-desktop-only, .xlarge-desktop-only, .xxlarge-desktop-only, 
+  .large-desktop-up, .xlarge-desktop-up, .xxlarge-desktop-up { display: none !important; }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .mobile-only, .tablet-only, .desktop-only, .xlarge-desktop-only, .xxlarge-desktop-only, 
+  .xlarge-desktop-up, .xxlarge-desktop-up { display: none !important; }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  .mobile-only, .tablet-only, .desktop-only, .large-desktop-only, .xxlarge-desktop-only,
+  .xxlarge-desktop-up { display: none !important; }
+}
+
+@media screen and (min-width: 1920px) {
+  .mobile-only, .tablet-only, .desktop-only, .large-desktop-only, .xlarge-desktop-only { display: none !important; }
+}
 
