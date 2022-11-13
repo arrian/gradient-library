@@ -255,6 +255,10 @@ section {
     text-align: center;
 }
 
+.icons-container > div:hover {
+    color: var(--color-accent-medium);
+}
+
 .icons-container > div > div {
     font-size: var(--font-size-14);
     margin-top: var(--space-3);
