@@ -144,6 +144,14 @@
   box-sizing: inherit;
 }
 
+@media (prefers-reduced-motion) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+}
+
 html {
   box-sizing: border-box;
   font-size: var(--font-size);
@@ -1177,6 +1185,10 @@ details.accordion > summary, .accordion-link {
   transition: background-color var(--transition-time) var(--transition-easing);
   border-radius: 0;
   color: var(--font-color);
+}
+
+details.accordion > .accordion-content {
+  padding: var(--space-3) var(--space-2) var(--space-3) var(--space-3);
 }
 
 details.accordion > summary > i, .accordion-link > i {
