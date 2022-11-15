@@ -758,12 +758,18 @@ textarea:disabled {
   border-radius: var(--border-radius-input);
   border: var(--border-input);
   outline: var(--focus-outline-hidden);
-  transition: outline var(--transition-time) var(--transition-easing), background-color var(--transition-time) var(--transition-easing);
+  transition: outline var(--transition-time) var(--transition-easing), background-color var(--transition-time) var(--transition-easing), color var(--transition-time) var(--transition-easing);
   box-shadow: var(--box-shadow);
   background-color: var(--background-color);
   color: var(--font-color);
   width: 100%;
   cursor: pointer;
+}
+
+.select:hover {
+  background-color: var(--color-neutral-light);
+  border: 1px solid var(--color-neutral-light);
+  box-shadow: none;
 }
 
 .select:after {
@@ -803,12 +809,11 @@ textarea:disabled {
   min-height: auto;
 }
 
-select {
+select, .select > *:not(.select-content) {
   appearance: none;
   background-color: transparent;
   border: none;
   border-radius: var(--border-radius-input);
-  padding: var(--space-2) var(--space-9) var(--space-2) var(--space-3);
   margin: 0;
   width: 100%;
   font-family: inherit;
@@ -816,6 +821,16 @@ select {
   color: inherit;
   cursor: inherit;
   line-height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.select:not(.chip) > div:not(.select-content) {
+  padding: var(--space-2) var(--space-9) var(--space-2) var(--space-3);
+}
+
+.select.chip > div:not(.select-content) {
+  padding: var(--space-1) var(--space-9) var(--space-1) var(--space-3);
 }
 
 .select.chip select {
@@ -851,6 +866,40 @@ select:invalid:not(:focus), select[data-invalid]:not(:focus) {
 .select:disabled, select:disabled {
   opacity: var(--disabled-opacity);
   background-color: var(--color-neutral-ultra-light);
+}
+
+/* Select Dropdown */
+
+.select-content {
+  position: absolute;
+  padding: var(--space-2) var(--space-3);
+  background-color: var(--background-color);
+  top: 100%;
+  left: 0;
+  box-shadow: var(--box-shadow);
+  margin-top: var(--space-1);
+  display: flex;
+  flex-direction: column;
+  z-index: 200;
+  max-height: 240px;
+  overflow-y: scroll;
+  border-radius: var(--border-radius-container);
+  border: var(--border-input);
+}
+
+.select-content[data-above] {
+  bottom: 100%;
+  top: auto;
+  margin-top: 0;
+  margin-bottom: var(--space-1);
+}
+
+.select-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--border-thin);
+  padding-bottom: var(--space-2);
 }
 
 /* Checkboxes */
